@@ -7,6 +7,7 @@ The data consist of 70 records, divided into a learning set of 35 records (a01 t
 (16 bits per sample, least significant byte first in each pair, 100 samples per second, nominally 200 A/D units per millivolt)
 
 Files
+
 | File Type | Description                                                                         |
 | ---       | ---                                                                                 |
 | .dat      | Digitized Signals                                                                   | 
@@ -14,6 +15,7 @@ Files
 | .apn      | Binary annotation files of apnea events                                             |
 | .qrs      | Binary annotation files of the QRS complex                                          |
 | .xws      | WAVE files for vizualising each record on Linux                                     |
+
 .apn an annotation for each minute of each recording indicating the presence or absence of apnea at that time; these are available for the 35 learning set recordings only. 
 The qrs files are machine-generated (binary) annotation files, made using sqrs125. Please note that the .qrs files are unaudited and contain errors. 
 
