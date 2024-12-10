@@ -11,6 +11,7 @@ The Apnea-ECG Database is a data base made for identifying Sleep Apnea events wi
 - Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), every minute indicating the presence or absence of apnea at that time
 - Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125. 
 - Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp, N), and oxygen saturation (SpO2).
+- Subjects info
 
 ### File Format
 
