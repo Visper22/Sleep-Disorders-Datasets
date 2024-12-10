@@ -42,9 +42,7 @@ The Apnea-ECG Database was designed to support the development of automated meth
 ## [CAP Sleep Database]([https://physionet.org/content/apnea-ecg/1.0.0/](https://physionet.org/content/capslpdb/1.0.0/))
 Published: July 26, 2012. Version: 1.0.0
 
-The Cyclic Alternating Pattern (CAP) is a periodic EEG activity occurring during NREM sleep. It is characterized by cyclic sequences of cerebral activation (phase A) followed by periods of deactivation (phase B) which separate two successive phase A periods with an interval <1 min. Despite being a physiological phenomenon, CAP is also a marker of sleep instability and can be correlated with several sleep-related pathologies. This database is intended to provide a useful number of carefully annotated examples of CAP in a representative variety of pathophysiologic contexts, for development and evaluation of automated CAP analyzers, as well as to support basic studies of the dynamics of CAP. Sleep stage automatic detection and Sleep disorders detecntion (although very unbalanced)
-
-registered at the Sleep Disorders Center of the Ospedale Maggiore of Parma, Italy.
+The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The recordings include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is CAP analysis, the CAP sleep database could also be used for the development of sleep stage automatic detection algorithms and sleep disorders detecntion algorithms. However, for the latter the set would be really unbanlced.
 
 - 108 polysomnographic recordings 
 - Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG of the submentalis muscle, bilateral anterior tibial EMG, respiration signals (airflow, abdominal and thoracic effort, and SaO2) and ECG.
@@ -66,12 +64,12 @@ registered at the Sleep Disorders Center of the Ospedale Maggiore of Parma, Ital
 
 | Name          | Description                     | 
 | ---           | ---                             |
-| n1-n16        | Healthy (no neurological disorders and free of drugs affecting CNS |
+| n1-n16        | Controls (no neurological disorders and free of drugs affecting CNS |
 | brux1-brux2   | Bruxism                         |
 | ins1-ins9     | Insomnia                        |
 | narco1-narco5 | Narcolepsy                      |
 | nfle1-nfle40  | Nocturnal frontal lobe epilepsy |
-| plm1-plm10	  | Periodic leg movements          |
+| plm1-plm10	   | Periodic leg movements          |
 | rbd1-rbd22    | REM behavior disorder           |
 | sdb1-sdb4     | Sleep-disordered breathing      |
 
@@ -93,7 +91,7 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 - Body position was not recorded in some subjects
 - Not all subjects have all of the mentioned signals recorded
 - A-phase annotations include distintion of waht subtype it is (A1, A2, A3)
-- Though the signals are pre-filtered some studies still employed some kind of filtering [Sheng-Hsiou et al. 2018](https://www.sciencedirect.com/science/article/pii/S1053811918306888), [(Yan et al. 2019)](https://www.sciencedirect.com/science/article/pii/S1746809418302647), [Sharma et al. 2023](https://www.sciencedirect.com/science/article/pii/S0010482523007242#b36), [Agarwal et al. 2024](https://www.sciencedirect.com/science/article/pii/S1389945724004465).
+- Though the signals are pre-filtered some studies still employed some kind of filtering [(Sheng-Hsiou et al. 2018)](https://www.sciencedirect.com/science/article/pii/S1053811918306888), [(Yan et al. 2019)](https://www.sciencedirect.com/science/article/pii/S1746809418302647), [(Sharma et al. 2023)](https://www.sciencedirect.com/science/article/pii/S0010482523007242#b36), [(Agarwal et al. 2024)](https://www.sciencedirect.com/science/article/pii/S1389945724004465).
 
 
 
