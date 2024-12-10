@@ -12,7 +12,7 @@ The Apnea-ECG Database was designed to support the development of automated meth
 - Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp, N), and oxygen saturation (SpO2).
 - Subjects info (**LINK FILE**)
 
-### File Format
+### Files
 
 | File Type | Description                                                                         |
 | ---       | ---                                                                                 |
