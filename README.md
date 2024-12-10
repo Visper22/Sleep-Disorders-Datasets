@@ -24,3 +24,9 @@ The qrs files are machine-generated (binary) annotation files, made using sqrs12
 Problems:
 In April 2013, Chiu-wen Wu reported that training set control records c05 and c06 come from the same original recording (c05 begins 80 seconds later than c06). The slightly different descriptions of these records in additional-information.txt suggest that c06 may have been a corrected version of c05.
 
+---
+output:
+  md_document:
+    variant: markdown_github
+bibliography: citations.bib
+---
