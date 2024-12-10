@@ -3,7 +3,7 @@
 ## [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/)
 Published: Feb. 10, 2000. Version: 1.0.0
 
-The Apnea-ECG Database is a data base made for identifying Sleep Apnea events with focus on ECG signals.
+The Apnea-ECG Database was designed to support the development of automated methods for detecting sleep apnea events, with a primary focus on ECG signals.
 
 ### It contains:
 - 70 ECG records from 7 hours to 10 hours
@@ -11,7 +11,7 @@ The Apnea-ECG Database is a data base made for identifying Sleep Apnea events wi
 - Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), every minute indicating the presence or absence of apnea at that time
 - Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125. 
 - Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp, N), and oxygen saturation (SpO2).
-- Subjects info
+- Subjects info (**LINK FILE**)
 
 ### File Format
 
@@ -30,13 +30,13 @@ The Apnea-ECG Database is a data base made for identifying Sleep Apnea events wi
 | a01-a20 | Apnea: 100 or more minutes with disordered breathing                    | Learning Set |
 | b01-b05 | Boderline Apnea: Some apneas of uncertain importance (10 to 90 minutes) | Learning Set |
 | c01-c10 | Control: Less than 5 min with disordered breathing                      | Learning Set |
-| x01-x35 | Signals not annotaded                                                   | Test Set     |
+| x01-x35 | No distinction made                                                     | Test Set     |
 
 
 
 ### Notes:
 - "In April 2013, Chiu-wen Wu reported that training set control records c05 and c06 come from the same original recording (c05 begins 80 seconds later than c06). The slightly different descriptions of these records in additional-information.txt suggest that c06 may have been a corrected version of c05.". [From Apnea-ECG Database site](https://physionet.org/content/apnea-ecg/1.0.0/)
-- Please note that the .qrs files are unaudited and contain errors.
+- .qrs files are unaudited and contain errors.
 - Several studies reported that the signals fro the database are raw signals, so artifact removal techiques were used to remove noise, such as noise from movement during sleep [(Li et al., 2024)](10.1109/TIM.2024.3440369), [(Krithika et al., 2024)](10.1109/ICIC3S61846.2024.106030499), [(Jiao et al., 2024)](10.1109/OJEMB.2024.3405666), [(Wei et al., 2024)](10.1109/IMCEC59810.2024.10575752).
 
 ## [CAP Sleep Database](https://physionet.org/content/apnea-ecg/1.0.0/)
