@@ -68,6 +68,7 @@ Several efforts have been made to develop a reliable automatic CAP-scoring algor
 ### Records
 
 | Name          | Description                     | 
+| ---           | ---                             |
 | n1-n16        | Controls                        |
 | brux1-brux2   | Bruxism                         |
 | ins1-ins9     | Insomnia                        |
