@@ -42,12 +42,12 @@ The Apnea-ECG Database was designed to support the development of automated meth
 ## [CAP Sleep Database]([https://physionet.org/content/apnea-ecg/1.0.0/](https://physionet.org/content/capslpdb/1.0.0/))
 Published: July 26, 2012. Version: 1.0.0
 
-The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The recordings include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is CAP analysis, the CAP sleep database could also be used for the development of sleep stage automatic detection algorithms and sleep disorders detecntion algorithms. However, for the latter the set would be really unbanlced.
+The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The records include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is CAP analysis, the CAP sleep database could also be used for the development of sleep stage automatic detection algorithms and sleep disorders detecntion algorithms. However, for the latter the set would be really unbanlced.
 
-- 108 polysomnographic recordings 
+- 108 polysomnographic records
 - Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG of the submentalis muscle, bilateral anterior tibial EMG, respiration signals (airflow, abdominal and thoracic effort, and SaO2) and ECG.
 - Some records may have additional EEG traces (Fp1-F3, F3-C3, C3-P3, P3-O1 and/or Fp2-F4, F4-C4, C4-P4, P4-O2)
-- Sampling rate varies between and within biosignals
+- Sampling rate varies between and within signals
 - Subject info [**Link**]
 
 ### Files
