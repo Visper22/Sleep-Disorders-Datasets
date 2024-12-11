@@ -64,7 +64,7 @@ The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg dur
 
 | Name          | Description                     | 
 | ---           | ---                             |
-| n1-n16        | Controls (no neurological disorders and free of drugs affecting CNS |
+| n1-n16        | Controls (no neurological disorders and free of drugs affecting CNS) |
 | brux1-brux2   | Bruxism                         |
 | ins1-ins9     | Insomnia                        |
 | narco1-narco5 | Narcolepsy                      |
@@ -121,19 +121,16 @@ St. Vincent's University Hospital Sleep Disorders Clinic
 | .m        | Matlab files for CAP scoring CAP parameters computation                                |
 | .xlsx     | Spreadsheet file with gender and age information                                       |
 
-### Records
+### Subjects
 
-| Name          | Description                     | 
-| ---           | ---                             |
-| n1-n16        | Controls (no neurological disorders and free of drugs affecting CNS |
-| brux1-brux2   | Bruxism                         |
-| ins1-ins9     | Insomnia                        |
-| narco1-narco5 | Narcolepsy                      |
-| nfle1-nfle40  | Nocturnal frontal lobe epilepsy |
-| plm1-plm10	   | Periodic leg movements          |
-| rbd1-rbd22    | REM behavior disorder           |
-| sdb1-sdb4     | Sleep-disordered breathing      |
+Subjects had to be above 18 years of age, with no known cardiac disease, autonomic dysfunction, and not on medication known to interfere with heart rate.
 
+| Characteristic | Description                       |
+| ---            | ---                               |
+| Age            | 50 ± 10 years; 28-68 years        |
+| BMI            | 31.6 ± 4.0 kg/m²; 25.1-42.5 kg/m² |
+| AHI            | 24.1 ± 20.3; 1.7-90.9             |
+| Gender         | 21M, 4F                           |
 
 ### Annotations
 
@@ -153,11 +150,12 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 
 ### Notes
 -  The recording dates and times are not available
--  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal.
+-  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal
+-  No paper
 
 
 Subjects
-Subjects were randomly selected over a 6-month period (September 02 to February 03) from patients referred to the Sleep Disorders Clinic at St Vincent's University Hospital, Dublin, for possible diagnosis of obstructive sleep apnea, central sleep apnea or primary snoring. Subjects had to be above 18 years of age, with no known cardiac disease, autonomic dysfunction, and not on medication known to interfere with heart rate. Twenty-five subjects (21M, 4F) were selected (age: 50 ± 10 years, range 28-68 years; BMI: 31.6 ± 4.0 kg/m², range 25.1-42.5 kg/m²; AHI: 24.1 ± 20.3, range 1.7-90.9). Details are shown in SubjectDetails.xls.)
+Subjects were randomly selected over a 6-month period (September 02 to February 03) from patients referred to the Sleep Disorders Clinic at St Vincent's University Hospital, Dublin, for possible diagnosis of obstructive sleep apnea, central sleep apnea or primary snoring. 
 
 
 
