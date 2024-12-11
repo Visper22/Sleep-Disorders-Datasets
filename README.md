@@ -109,7 +109,7 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 ## [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/apnea-ecg/1.0.0/)
 Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)
 
-The database provides overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) and sleep stage classification [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187). Other studies focused on obstructive sleep apnea (OSA) events detection [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267), [(Cai et al. 2025)](https://www.sciencedirect.com/science/article/pii/S1746809424010516), while others focused in general apnea event detection [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610).
+The database contains overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) and sleep stage classification [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187). For sleep apnea events detection some studies detect sleep apnea events,  regardless of type (Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610) while others focus on specific events detection, such as obstructive sleep apnea event detection [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267), [(Cai et al. 2025)](https://www.sciencedirect.com/science/article/pii/S1746809424010516), and multiple sleep apnea events detection (Hypopnea, Central, Obstructive,Mixed) [(Arnab et al. 2022)](10.1109/TENSYMP54529.2022.9864566).
 
 - 25 polysomnography records (Jaeger-Toennies system) acompained by Three-channel holter ECGs (Reynolds Lifecard CF system)
 - PSG records include EEG (C3-A2), EEG (C4-A1), left EOG, right EOG, submental EMG, ECG (modified lead V2), oro-nasal airflow (thermistor), ribcage movements, abdomen movements (uncalibrated strain gauges), oxygen saturation (finger pulse oximeter), snoring (tracheal microphone) and body position.
@@ -130,7 +130,7 @@ The database provides overnight polysomnograms and simultaneous three-channel Ho
 
 ### Subjects
 
-Subjects had to be above 18 years of age, with no known cardiac disease, autonomic dysfunction, and not on medication known to interfere with heart rate. They were randomly selected over a 6-month period (September 2002 to February 2003) from patients referred to the Sleep Disorders Clinic at St Vincent's University Hospital, Dublin, for possible diagnosis of obstructive sleep apnea, central sleep apnea or primary snoring. 
+Subjects with no known cardiac disease, autonomic dysfunction, and not on medication known to interfere with heart rate. They were randomly selected over a 6-month period (September 2002 to February 2003) from patients referred to the Sleep Disorders Clinic at St Vincent's University Hospital, Dublin, for possible diagnosis of obstructive sleep apnea, central sleep apnea or primary snoring. 
 
 | Characteristic | Description                       |
 | ---            | ---                               |
@@ -160,7 +160,7 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 -  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal
 -  [(Geng et el.)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) discarded poor ECG quality signals though they do not mention which. Additionally, the methods for R-peak detection was chosen specifically for signals with poor quality.
 -  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
--  No paper
+-  No paper on the db
 
 
 
