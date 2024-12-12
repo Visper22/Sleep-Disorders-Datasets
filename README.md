@@ -5,8 +5,7 @@ Published: Feb. 10, 2000. Version: 1.0.0
 
 The Apnea-ECG Database was designed to support the development of automated methods for detecting sleep apnea events, with a primary focus on ECG signals.
 
-OSA detection using HRV and EDR  [(Yang et al.)](https://www.sciencedirect.com/science/article/pii/S0010482521009185)
-OSA event detection usign ECG [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267)
+OSA event detection usign ECG [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267),  [(Yang et al.)](https://www.sciencedirect.com/science/article/pii/S0010482521009185)
 Apnea events (in general) [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610)
 
 - 70 ECG records from 7 hours to 10 hours
