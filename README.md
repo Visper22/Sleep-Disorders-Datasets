@@ -49,7 +49,7 @@ Apnea annotations (derived by human experts on the basis of simultaneously recor
 
 
 ## [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/)
-Published: July 26, 2012. Version: 1.0.0
+*Published: July 26, 2012. Version: 1.0.0*
 
 The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The records include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is CAP analysis, the CAP sleep database could also be used for the development of sleep stage automatic detection algorithms and sleep disorders detecntion algorithms. However, for the latter the set would be really unbanlced.
 
@@ -108,7 +108,7 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 
 
 ## [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/apnea-ecg/1.0.0/)
-Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)
+*Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)*
 
 The database contains overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://doi.org/10.1016/j.bspc.2021.103132) and sleep stage classification [(Abdulla et al. 2023)](https://doi.org/10.1016/j.ijmedinf.2023.105001). For sleep apnea events detection some studies detect sleep apnea events,  regardless of type [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Cai et al. 2025)](https://doi.org/10.1016/j.bspc.2024.106993), while others focus on specific events detection, such as obstructive sleep apnea event detection [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), and multiple sleep apnea events detection (Hypopnea, Central, Obstructive,Mixed) [(Arnab et al. 2022)](https://doi.org/10.1109/TENSYMP54529.2022.9864566).
 
@@ -166,7 +166,7 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 
 
 ## [MIT-BIH Polysomnographic Database](https://physionet.org/content/slpdb/1.0.0/)
-Published: Aug. 3, 1999. Version: 1.0.0
+*Published: Aug. 3, 1999. Version: 1.0.0*
 
 The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnographic records, collected from patients at the Boston's Beth Israel Hospital Sleep Laboratory for chronic obstructive sleep apnea syndrome (OSA) evaluation and to test the effects of CPAP (continuous positive airway pressure). Records vary beatween four-, six-, and seven-channel record and include automatic (with corrections) beat annotations on the ECG and sleep stages and apnea events annotations each 30 s. This database was disignd for researchers studying clinical physiology or non-linear dynamics during sleep apnea, engineers developing algorithms for PSG data analysis, and students learning about sleep physiology. In literature it has been used for detectionn and classification tasks, including general apnea event detection [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610), OSA event analysis [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), sleep stage classification [(Isa et al. 2012)](https://doi.org/10.1016/j.proeng.2012.07.259), [(Otomo et al. 2019)](https://doi.org/10.1016/j.procs.2019.08.173), drowsiness detection in sleep stage 1 [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004), and heart rate estimation  [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004).
 
@@ -211,7 +211,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 
 
 ## [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/)
-Published: Oct. 24, 2013. Version: 1.0.0
+*Published: Oct. 24, 2013. Version: 1.0.0*
 
 The sleep-edf database contains 197 whole-night PolySomnoGraphic sleep recordings, containing EEG, EOG, chin EMG, and event markers. Some records also contain respiration and body temperature.  The data comes from two studies: Sleep Cassette Study and Data (SC) and Sleep Telemetry Study and Data (ST).
 
