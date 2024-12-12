@@ -241,10 +241,10 @@ The 44 ST* files (ST = Sleep Telemetry) were obtained in a 1994 study of temazep
 
 ### Subjects
 
-| Characteristic | SC                                | ST
-| ---            | ---                               |
-| Age            | mean 59 years; 25-101 years       | mean 40 years; 18-79 years 
-| Gender         | 34M/40F                           | 7M/15F
+| Characteristic | SC                                | ST                         |
+| ---            | ---                               | ---                        |
+| Age            | mean 59 years; 25-101 years       | mean 40 years; 18-79 years |
+| Gender         | 34M/40F                           | 7M/15F                     |
 
 ### Annotations
 
