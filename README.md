@@ -161,7 +161,6 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 -  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal
 -  [(Geng et el.)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) discarded poor ECG quality signals though they do not mention which. Additionally, the methods for R-peak detection was chosen specifically for signals with poor quality.
 -  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
--  No paper on the db
 
 
 
@@ -211,6 +210,56 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 
 
 
+## [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/)
+Published: Oct. 24, 2013. Version: 1.0.0
+
+The sleep-edf database contains 197 whole-night PolySomnoGraphic sleep recordings, containing EEG, EOG, chin EMG, and event markers. Some records also contain respiration and body temperature.  The data comes from two studies: Sleep Cassette Study and Data (SC) and Sleep Telemetry Study and Data (ST).
+
+Sleep Cassette Study and Data
+The 153 SC* files (SC = Sleep Cassette) were obtained in a 1987-1991 study of age effects on sleep in healthy Caucasians aged 25-101, without any sleep-related medication [2]. Two PSGs of about 20 hours each were recorded during two subsequent day-night periods at the subjects homes. Subjects continued their normal activities but wore a modified Walkman-like cassette-tape recorder. 
+74 subjects
+
+Sleep Telemetry Study and Data
+The 44 ST* files (ST = Sleep Telemetry) were obtained in a 1994 study of temazepam effects on sleep in 22 Caucasian males and females without other medication. Subjects had mild difficulty falling asleep but were otherwise healthy. The PSGs of about 9 hours were recorded in the hospital during two nights, one of which was after temazepam intake, and the other of which was after placebo intake. Subjects wore a miniature telemetry system with very good signal quality described in [8]. 
+22 subjects
+
+- 197 PSG records from 2 studies:
+- 12 bits per sample, 250 samples per second
+- All records contain EEG (from Fpz-Cz and Pz-Oz electrode locations) signals, EOG (horizontal) signals, and submental chin EMG signal.
+- The SC records often also contain oro-nasal respiration and rectal body temperature.
+- SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz.
+- ST frequency: EOG, EMG and EEG - 100 Hz, and the event marker at 1 Hz.
+
+### Files
+
+| File Type     | Description                                            |
+| ---           | ---                                                    |
+| PSG.edf       | Digitized Signals in European data format              | 
+| Hypnogram.edf | Sleep satges annotations file in European Data Format  |
+| .xls          | Subject information                                    |
+
+
+### Subjects
+
+| Characteristic | SC                                | ST
+| ---            | ---                               |
+| Age            | mean 59 years; 25-101 years       | mean 40 years; 18-79 years 
+| Gender         | 34M/40F                           | 7M/15F
+
+### Annotations
+
+Hypnograms were manually scored by trained technicians (identified by the eighth letter of the hypnogram filename) according to the 1968 R & Kales rules, but based on Fpz-Cz/Pz-Oz EEGs instead of C4-A1/C3-A2 EEGs.
+
+| Type               | Description                                                             |
+| ---                | ---                                                                     |
+| Sleep stage        | W: wake, 1-4: sleep stages 1-4, R: REM, M: Movement time, ?: not scored |
+
+
+### Notes
+- SC: The first nights of subjects 36 and 52, and the second night of subject 13, were lost due to a failing cassette or laserdisk.
+- SC: The submental-EMG signal was electronically highpass filtered, rectified and low-pass filtered
+- Files are named in the form */*7**ssN**J0-PSG.edf where ss is the subject number, and N is the night.
+- Several studies reported employing some type of filtering to removw artifacts [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004), [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004)
 
 
 
