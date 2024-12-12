@@ -307,37 +307,16 @@ SHHS Visit 1 (November 1995 - January 1998) (N=5798)
 
 ### Subjects
 
-Subjects with no known cardiac disease, autonomic dysfunction, and not on medication known to interfere with heart rate. They were randomly selected over a 6-month period (September 2002 to February 2003) from patients referred to the Sleep Disorders Clinic at St Vincent's University Hospital, Dublin, for possible diagnosis of obstructive sleep apnea, central sleep apnea or primary snoring. 
 
-| Characteristic | Description                       |
-| ---            | ---                               |
-| Age            | 50 ± 10 years; 28-68 years        |
-| BMI            | 31.6 ± 4.0 kg/m²; 25.1-42.5 kg/m² |
-| AHI            | 24.1 ± 20.3; 1.7-90.9             |
-| Gender         | 21M, 4F                           |
 
 ### Annotations
 
-Sleep stages were scored by an experienced sleep technologist according to the Rechtschaffen & Kales rules. Onset time and duration of respiratory events were annotated by the same sleep technologist.
 
-| Type               | Description                                                       |
-| ---                | ---                                                               |
-| Sleep stage        | 0: wake, 1: REM, 2-5: sleep stages, 6: artifact, 7: indeterminate |
-| Respiratory events | HYP: Hypopnea, C: Central, O: Obstructive, M: Mixed               |
-| Duration           | Duration of respiratory event in seconds                          |
-| Time of day        | [hh:mm:ss]                                                        |
-| Snore              | Not present: -, Present: +                                        |
-| Arousal            | Not present: -, Present: +                                        |
-| PB/CS              | Periodic breathing/Cheynes-Stokes                                 |
-| B/T                | Bradycardia/Tachycardia rare and change                           |
+
 
 
 ### Notes
--  The recording dates and times are not available
--  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal
--  [(Geng et el.)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) discarded poor ECG quality signals though they do not mention which. Additionally, the methods for R-peak detection was chosen specifically for signals with poor quality.
 -  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
--  No paper on the db
 
 
 
