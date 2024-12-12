@@ -3,19 +3,12 @@
 ## [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/)
 Published: Feb. 10, 2000. Version: 1.0.0
 
-The Apnea-ECG Database was designed to support the development of automated methods for detecting sleep apnea events, with a primary focus on ECG signals.
-
-OSA event detection usign ECG [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532),  [(Yang et al.)](https://doi.org/10.1016/j.compbiomed.2021.105124)
-Apnea events (in general) [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005)
+The Apnea-ECG Database was design to support the development of automated methods for detecting sleep apnea events, emphasizing the use of ECG signals. So it has been many employed in various studies for the detection of sleep apnea events [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369) [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558) but also, for subject-level sleep apnea classification [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666).
 
 - 70 ECG records from 7 hours to 10 hours
 - 16 bits per sample, least significant byte first in each pair, 100 samples per second, nominally 200 A/D units per millivolt
-- Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), every minute indicating the presence or absence of apnea at that time
-- Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125. 
 - Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp, N), and oxygen saturation (SpO2).
 - Subjects info (**LINK FILE**)
-
-- 100 Hz frequency spo2
 
 ### Files
 
@@ -36,10 +29,19 @@ Apnea events (in general) [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc
 | c01-c10 | Control: Less than 5 min with disordered breathing                      | Learning Set |
 | x01-x35 | No distinction made                                                     | Test Set     |
 
+### Annotations
+
+Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), every minute. Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125.
+
+| Type         | Description                                               |
+| ---          | ---                                                       |
+|Apnea Event   | N: Normal, A: Apnea                                       |
+|Qrs complex   | N: R-peak                                                 |
+
 ### Notes
 - "In April 2013, Chiu-wen Wu reported that training set control records c05 and c06 come from the same original recording (c05 begins 80 seconds later than c06). c06 may have been a corrected version of c05.". [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/)
 - .qrs files are unaudited and contain errors. [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/)
-- Some ECG recordings (a10, a12, a19, b05, c01, c04, c07, c09, and x17) are reversed. [(Yang et al.)](https://doi.org/10.1016/j.compbiomed.2021.105124)
+- Some ECG recordings (a10, a12, a19, b05, c01, c04, c07, c09, and x17) are reversed [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124).
 - Several studies reported that the signals from the database are raw signals, so artifact removal techiques were used to remove noise, such as noise from movement during sleep [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369), [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532).
 - [(Travieso et al.)](https://doi.org/10.1016/j.neucom.2013.04.048) evaluated the quality of the ECG signals following pre-defined characteristics and "after discarding the affected segments, the recordings are reduced to a 54.76% of its duration in the worst case and 89.09% in the best case, per patient. The mean extracted length of the database recordings is 76.94%.". They employ this process of discarding the noisy or low quality segments instead of applying typical filtering techniques.
 
@@ -108,7 +110,7 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 ## [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/apnea-ecg/1.0.0/)
 Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)
 
-The database contains overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) and sleep stage classification [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187). For sleep apnea events detection some studies detect sleep apnea events,  regardless of type (Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610) while others focus on specific events detection, such as obstructive sleep apnea event detection [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Cai et al. 2025)](https://www.sciencedirect.com/science/article/pii/S1746809424010516), and multiple sleep apnea events detection (Hypopnea, Central, Obstructive,Mixed) [(Arnab et al. 2022)](10.1109/TENSYMP54529.2022.9864566).
+The database contains overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) and sleep stage classification [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187). For sleep apnea events detection some studies detect sleep apnea events,  regardless of type [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610) while others focus on specific events detection, such as obstructive sleep apnea event detection [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Cai et al. 2025)](https://www.sciencedirect.com/science/article/pii/S1746809424010516), and multiple sleep apnea events detection (Hypopnea, Central, Obstructive,Mixed) [(Arnab et al. 2022)](10.1109/TENSYMP54529.2022.9864566).
 
 - 25 polysomnography records (Jaeger-Toennies system) acompained by Three-channel holter ECGs (Reynolds Lifecard CF system)
 - PSG records include EEG (C3-A2), EEG (C4-A1), left EOG, right EOG, submental EMG, ECG (modified lead V2), oro-nasal airflow (thermistor), ribcage movements, abdomen movements (uncalibrated strain gauges), oxygen saturation (finger pulse oximeter), snoring (tracheal microphone) and body position.
