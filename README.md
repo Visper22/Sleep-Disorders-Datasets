@@ -7,7 +7,7 @@ The Apnea-ECG Database was design to support the development of automated method
 
 - 70 ECG records from 7 hours to 10 hours
 - 16 bits per sample, least significant byte first in each pair, 100 samples per second, nominally 200 A/D units per millivolt
-- Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp, N), and oxygen saturation (SpO2).
+- Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp N), and oxygen saturation (SpO2).
 - Subjects info (**LINK FILE**)
 
 ### Files
@@ -33,10 +33,10 @@ The Apnea-ECG Database was design to support the development of automated method
 
 Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), every minute. Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125.
 
-| Type         | Description                                               |
-| ---          | ---                                                       |
-|Apnea Event   | N: Normal, A: Apnea                                       |
-|Qrs complex   | N: R-peak                                                 |
+| Type          | Description                                               |
+| ---           | ---                                                       |
+| Apnea Event   | N: Normal, A: Apnea                                       |
+| Qrs complex   | N: R-peak                                                 |
 
 ### Notes
 - "In April 2013, Chiu-wen Wu reported that training set control records c05 and c06 come from the same original recording (c05 begins 80 seconds later than c06). c06 may have been a corrected version of c05.". [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/)
@@ -87,14 +87,14 @@ The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg dur
 
 Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, while the CAP was detected in agreement with Terzano’s reference atlas of rules.
 
-| Type         | Description                                               |
-| ---          | ---                                                       |
-|Sleep stage   | W=wake, S1-S4=sleep stages, R=REM, MT=body movements      |
-|Body position | Left, Right, Prone, or Supine                             |
-|Time of day   | [hh:mm:ss]                                                |
-|Event         | sleep stage (SLEEP-S0..S4, REM, MT), or a phase A of CAP) |
-|Duration      | in seconds                                                |
-|Location      | the signal(s) in which the event can be observed          |
+| Type          | Description                                               |
+| ---           | ---                                                       |
+| Sleep stage   | W: wake, S1-S4: sleep stages, R: REM, MT: body movements  |
+| Body position | Left, Right, Prone, or Supine                             |
+| Time of day   | [hh:mm:ss]                                                |
+| Event         | sleep stage (SLEEP-S0..S4, REM, MT), or a phase A of CAP) |
+| Duration      | in seconds                                                |
+| Location      | the signal(s) in which the event can be observed          |
 
 ### Notes
 - Body position was not recorded in some subjects
@@ -165,7 +165,134 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 
 
 
-MIT-BHI Apnea events (in general) [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610)
+
+## [MIT-BIH Polysomnographic Database](https://physionet.org/content/slpdb/1.0.0/)
+Published: Aug. 3, 1999. Version: 1.0.0
+
+The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnographic records, collected from patients at the Boston's Beth Israel Hospital Sleep Laboratory for chronic obstructive sleep apnea syndrome (OSA) evaluation and to test the effects of CPAP (continuous positive airway pressure). Records vary beatween four-, six-, and seven-channel record and include automatic (with corrections) beat annotations on the ECG and sleep stages and apnea events annotations each 30 s. This database was disignd for researchers studying clinical physiology or non-linear dynamics during sleep apnea, engineers developing algorithms for PSG data analysis, and students learning about sleep physiology. In literature it has been used for detectionn and classification tasks, including general apnea event detection [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610), OSA event analysis [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), sleep stage classification [(Isa et al. 2012)](https://doi.org/10.1016/j.proeng.2012.07.259), [(Otomo et al. 2019)](https://doi.org/10.1016/j.procs.2019.08.173), drowsiness detection in sleep stage 1 [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004), and heart rate estimation  [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004).
+
+- 18 PSG records from 16 subjects
+- 12 bits per sample, 250 samples per second
+- All recordings include an ECG signal, an invasive blood pressure signal (measured using a catheter), an EEG signal (C4-A1, O2-A1 or C3-O1), and a respiration signal (airflow or abdominal orchest effort)
+- The six- and seven-channel recordings also include a respiratory effort signal derived by inductance plethysmography; some include an EOG signal and an EMG signal (chin), and the remainder include a cardiac stroke volume signa and Spo2 signal (earlobe).
+- Subjects info (**LINK FILE**)
+
+### Files
+
+| File Type | Description                                                                         |
+| ---       | ---                                                                                 |
+| .dat      | Digitized Signals                                                                   | 
+| .hea      | Text header files that specify the names and formats of the associated signal files |
+| .ecg      | Automatic R-peak (heartbeat) annotations                                            |
+| .st       | Sleep stages and Apnea annotations                                                  |
+| .xws      | WAVE files for vizualising each record on Linux                                     |
+
+### Subjects
+
+| Characteristic | Description                       |
+| ---            | ---                               |
+| Age            | mean 43 years; 32-56 years        |
+| Weight         | mean 119 kg; 89-152 kg     |
+| Gender         | 16M                               |
+
+### Annotations
+
+| Type               | Description                                                         |
+| ---                | ---                                                                 |
+| Sleep stage        | W: wake, 1-4: sleep stages 1-4, R: REM |
+| Respiratory events | H:	Hypopnea,	HA:	Hypopnea with arousal,	OA:	Obstructive apnea,	X:	Obstructive apnea with arousal,	CA:	Central apnea,	CAA:	Central apnea with arousal |
+| Body movements     | L:	Leg movements,	LA:	Leg movements with arousal,	MT:	Movement time 
+| Other              | A: Unspecified arousal                                              |
+
+### Notes
+- slp41 and slp 45 records do not have apnea annotations
+- Records slp01a and slp01b are segments of one subject's polysomnogram, separated by a gap of about one hour; records slp02a and slp02b are segments of another subject's polysomnogram, separated by a ten-minute gap.
+- Several studies reported employing some type of filtering to removw artifacts [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004), [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## [Sleep Heart Health Study (SHHS)](https://biolincc.nhlbi.nih.gov/studies/shhs/)
+Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)
+
+To determine the cardiovascular and other consequences of sleep-disordered breathing and to test whether sleep-disordered breathing is associated with an increased risk of coronary heart disease, stroke, all-cause mortality and hypertension by examining subjects from well-characterized and established epidemiologic cohorts. The Sleep Heart Health Study added in-home polysomnography to the data collected in each of the parent studies at a baseline SHHS exam and a follow-up approximately 4 years later.
+
+SHHS Visit 1 (November 1995 - January 1998) (N=5798)
+-  5804 Polysomonography records (SHHS-1)
+-  Follow-up polysomnogram (SHHS-2) was obtained for 3295 of the participants
+-  Polysomonography records include EEG (C3/A2 and C4/A1), EOG (right and left), EMG (bipolar submental), ECG (bipolar lead), Respiratory signals (abbdominal and thoracix effort, and airflow), Heart rate (derived from ECG), pO2, Body position, ambient light 
+- Sampling frequency: EEG, ECG (SHHS-1) and EMG - 125 Hz; EOG - 50 Hz; ECG (SHHS-2) - 250 Hz, airflow, THOR and ABDO - 10 Hz; Heart rate, Spo2 - 1 Hz
+- Each participant in the parent studies was completed a questionaire covering usual sleep pattern, snoring, and sleepiness.
+
+
+
+### Files
+ 
+| File Type | Description                                                                            |
+| ---       | ---                                                                                    |
+| .edf      | Digitized Holter Signals in European Data format                                       |
+| .rec      | Digitized Polysonography Signals in European Data format                               | 
+| .txt      | Annotation files                                                                       |
+| .st       | Annotation for PhysioBank ATM or other software that reads PhysioBank-compatible files |
+| .m        | Matlab files for CAP scoring CAP parameters computation                                |
+| .xlsx     | Spreadsheet file with gender and age information                                       |
+
+### Subjects
+
+Subjects with no known cardiac disease, autonomic dysfunction, and not on medication known to interfere with heart rate. They were randomly selected over a 6-month period (September 2002 to February 2003) from patients referred to the Sleep Disorders Clinic at St Vincent's University Hospital, Dublin, for possible diagnosis of obstructive sleep apnea, central sleep apnea or primary snoring. 
+
+| Characteristic | Description                       |
+| ---            | ---                               |
+| Age            | 50 ± 10 years; 28-68 years        |
+| BMI            | 31.6 ± 4.0 kg/m²; 25.1-42.5 kg/m² |
+| AHI            | 24.1 ± 20.3; 1.7-90.9             |
+| Gender         | 21M, 4F                           |
+
+### Annotations
+
+Sleep stages were scored by an experienced sleep technologist according to the Rechtschaffen & Kales rules. Onset time and duration of respiratory events were annotated by the same sleep technologist.
+
+| Type               | Description                                                       |
+| ---                | ---                                                               |
+| Sleep stage        | 0: wake, 1: REM, 2-5: sleep stages, 6: artifact, 7: indeterminate |
+| Respiratory events | HYP: Hypopnea, C: Central, O: Obstructive, M: Mixed               |
+| Duration           | Duration of respiratory event in seconds                          |
+| Time of day        | [hh:mm:ss]                                                        |
+| Snore              | Not present: -, Present: +                                        |
+| Arousal            | Not present: -, Present: +                                        |
+| PB/CS              | Periodic breathing/Cheynes-Stokes                                 |
+| B/T                | Bradycardia/Tachycardia rare and change                           |
+
+
+### Notes
+-  The recording dates and times are not available
+-  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal
+-  [(Geng et el.)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) discarded poor ECG quality signals though they do not mention which. Additionally, the methods for R-peak detection was chosen specifically for signals with poor quality.
+-  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
+-  No paper on the db
+
+
+
+
 Sleep-EDF Sleep stages classification [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187)
 
 
