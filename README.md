@@ -5,7 +5,7 @@
 | [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/) | 70 | ECG and chest and abdominal effort, airflow,  and SpO2)| 16 bits per sample, 100 Hz, 200 A/D units per millivolt | Apnea events, QRS complex | 70 subjects: Age -	mean 45.1 years,	27-63 years; AHI -	mean 28,	0-93.5; Gender -	58M, 12F	 | Sleep Apnea event detection, sleep Apnea classification |
 | [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/) | 108 | EEG, EOG, EMG, ECG, airflow, abdominal and thoracic effort and SaO2 | Signal Properties | CAP cycle, Sleep stages, body position | 108 subjects: Age - mean 45.2 years,	14-82 years; Gender - 66M, 42F | CAP cycle detection, sleep stage scoring, sleep disorder classification |
 | [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/ucddb/1.0.0/) | 25 | EEG, EOG, EMG, ECG, airflow (thermistor), tharacid and abdominal effort, SpO2, snoring and body position | Sampling frequency: SpO2 - 8 Hz; EEG and ECG - 128 Hz, EOG and EMG - 64 Hz | Sleep stage, Respiratory events, Duration of respiratory event, Snore, Arousal, PB/CS and B/T | 25 subjects: Age - 50 ± 10 years, 28-68 years; BMI - 31.6 ± 4.0 kg/m², 25.1-42.5 kg/m²; AHI - 24.1 ± 20.3, 1.7-90.9; Gender - 21M, 4F | sleep stage scoring, sleep apnea events detection |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| [MIT-BIH Polysomnographic Database](https://physionet.org/content/slpdb/1.0.0/) | 18 | ECG, BP, EEG, EOG, EMG, airflow, abdominal or thoracic, SpO2 and cardiac stroke volume | 12 bits, 250 Hz | Sleep stage, Sleep Apnea events, Body movements, Arousal  | 16 subjects: Age - mean 43 years, 32-56 years; Weight - mean 119 kg, 89-152 kg; Gender: 16M | Sleep stage scoring, Sleep apnea event detection |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
@@ -193,9 +193,8 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 
 - 18 PSG records from 16 subjects
 - 12 bits per sample, 250 samples per second
-- All recordings include an ECG signal, an invasive blood pressure signal (measured using a catheter), an EEG signal (C4-A1, O2-A1 or C3-O1), and a respiration signal (airflow or abdominal orchest effort)
-- The six- and seven-channel recordings also include a respiratory effort signal derived by inductance plethysmography; some include an EOG signal and an EMG signal (chin), and the remainder include a cardiac stroke volume signa and Spo2 signal (earlobe).
-- Subjects info (**LINK FILE**)
+- All recordings include an ECG signal, an blood pressure signal (measured using a catheter), an EEG signal (C4-A1, O2-A1 or C3-O1), and a respiration signal (airflow, abdominal or thoracic effort)
+- The six- and seven-channel recordings also include a respiratory effort signal derived by inductance plethysmography; some include an EOG signal and an EMG signal (chin), and the remainder include a cardiac stroke volume signal and Spo2 signal (earlobe).
 
 ### Files
 
@@ -211,8 +210,8 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 
 | Characteristic | Description                       |
 | ---            | ---                               |
-| Age            | mean 43 years; 32-56 years        |
-| Weight         | mean 119 kg; 89-152 kg     |
+| Age            | mean 43 years, 32-56 years        |
+| Weight         | mean 119 kg, 89-152 kg     |
 | Gender         | 16M                               |
 
 ### Annotations
@@ -222,7 +221,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 | Sleep stage        | W: wake, 1-4: sleep stages 1-4, R: REM |
 | Respiratory events | H:	Hypopnea,	HA:	Hypopnea with arousal,	OA:	Obstructive apnea,	X:	Obstructive apnea with arousal,	CA:	Central apnea,	CAA:	Central apnea with arousal |
 | Body movements     | L:	Leg movements,	LA:	Leg movements with arousal,	MT:	Movement time 
-| Other              | A: Unspecified arousal                                              |
+| Arousal              | A: Unspecified arousal                                              |
 
 ### Notes
 - slp41 and slp 45 records do not have apnea annotations
