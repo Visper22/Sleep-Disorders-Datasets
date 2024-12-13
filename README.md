@@ -57,7 +57,6 @@ The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg dur
 - Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG of the submentalis muscle, bilateral anterior tibial EMG, respiration signals (airflow, abdominal and thoracic effort, and SaO2) and ECG.
 - Some records may have additional EEG traces (Fp1-F3, F3-C3, C3-P3, P3-O1 and/or Fp2-F4, F4-C4, C4-P4, P4-O2)
 - Sampling rate varies between and within signals
-- Subject info [**Link**]
 
 ### Files
  
@@ -213,18 +212,11 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 ## [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/)
 *Published: Oct. 24, 2013. Version: 1.0.0*
 
-The sleep-edf database contains 197 whole-night PolySomnoGraphic sleep recordings, containing EEG, EOG, chin EMG, and event markers. Some records also contain respiration and body temperature.  The data comes from two studies: Sleep Cassette Study and Data (SC) and Sleep Telemetry Study and Data (ST).
 
-Sleep Cassette Study and Data
-The 153 SC* files (SC = Sleep Cassette) were obtained in a 1987-1991 study of age effects on sleep in healthy Caucasians aged 25-101, without any sleep-related medication [2]. Two PSGs of about 20 hours each were recorded during two subsequent day-night periods at the subjects homes. Subjects continued their normal activities but wore a modified Walkman-like cassette-tape recorder. 
-74 subjects
+The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake.
 
-Sleep Telemetry Study and Data
-The 44 ST* files (ST = Sleep Telemetry) were obtained in a 1994 study of temazepam effects on sleep in 22 Caucasian males and females without other medication. Subjects had mild difficulty falling asleep but were otherwise healthy. The PSGs of about 9 hours were recorded in the hospital during two nights, one of which was after temazepam intake, and the other of which was after placebo intake. Subjects wore a miniature telemetry system with very good signal quality described in [8]. 
-22 subjects
-
-- 197 PSG records from 2 studies:
-- 12 bits per sample, 250 samples per second
+- 197 PSG records from 2 studies: 153 20h long records from 74 subjects (SC) and 44 9h long records from 22 subjects (ST)
+- 12 bits per sample
 - All records contain EEG (from Fpz-Cz and Pz-Oz electrode locations) signals, EOG (horizontal) signals, and submental chin EMG signal.
 - The SC records often also contain oro-nasal respiration and rectal body temperature.
 - SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz.
