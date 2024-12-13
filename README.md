@@ -1,26 +1,28 @@
 # Sleep-Disorders-Datasets
 
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| --- | --- | --- | --- | --- | --- |
-| [Apnea-ECG Database](##[Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/)) | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| --- | --- | --- | --- | --- | --- | ---|
+| [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/) | 70 | ECG and chest and abdominal effort, airflow,  and SpO2)| 16 bits per sample, 100 Hz, 200 A/D units per millivolt | Apnea events, QRS complex | 70 subjects: age -	mean 45.1 years,	27-63 years;
+AHI -	mean 28,	0-93.5; Gender:	58M, 12F	 | Sleep Apnea event detection, sleep Apnea classification |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 
 
 ## [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/)
 *Published: Feb. 10, 2000. Version: 1.0.0*
 
-The Apnea-ECG Datababe was design to support the development of automated methods for detecting sleep apnea events, emphasizing the use of ECG signals. So, it has been many employed in various studies for the detection of sleep apnea events [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369) [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558) but also, for subject-level sleep apnea classification [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666).
+The Apnea-ECG Database was design to support the development of automated methods for detecting sleep apnea events, focusing the use of ECG signals. So, it has been many employed in various studies for the detection of sleep apnea events [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369) [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558) but also, for subject-level sleep apnea classification [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666).
 
 - 70 ECG records from 7 hours to 10 hours
-- 16 bits per sample, least significant byte first in each pair, 100 samples per second, nominally 200 A/D units per millivolt
-- Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp N), and oxygen saturation (SpO2).
+- 16 bits, 100 Hz, 200 A/D units per millivolt
+- All records have ECG signals
+- Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp N), and SpO2.
 
 ### Files
 
@@ -40,6 +42,16 @@ The Apnea-ECG Datababe was design to support the development of automated method
 | b01-b05 | Boderline Apnea: Some apneas of uncertain importance (10 to 90 minutes) | Learning Set |
 | c01-c10 | Control: Less than 5 min with disordered breathing                      | Learning Set |
 | x01-x35 | No distinction made                                                     | Test Set     |
+
+### Subjects
+
+| Characteristic | Description                       |
+| ---            | ---                               |
+| Age            | mean 45.1 years,	27-63 years        |
+| AHI            | mean 28,	0-93.5             |
+| Gender         | 58M, 12F                           |
+
+
 
 ### Annotations
 
