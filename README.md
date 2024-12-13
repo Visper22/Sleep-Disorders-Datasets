@@ -7,7 +7,7 @@
 | [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/ucddb/1.0.0/) | 25 | EEG, EOG, EMG, ECG, airflow (thermistor), tharacid and abdominal effort, SpO2, snoring and body position | Sampling frequency: SpO2 - 8 Hz; EEG and ECG - 128 Hz, EOG and EMG - 64 Hz | Sleep stage, Respiratory events, Duration of respiratory event, Snore, Arousal, PB/CS and B/T | 25 subjects: Age - 50 ± 10 years, 28-68 years; BMI - 31.6 ± 4.0 kg/m², 25.1-42.5 kg/m²; AHI - 24.1 ± 20.3, 1.7-90.9; Gender - 21M, 4F | sleep stage scoring, sleep apnea events detection |
 | [MIT-BIH Polysomnographic Database](https://physionet.org/content/slpdb/1.0.0/) | 18 | ECG, BP, EEG, EOG, EMG, airflow, abdominal or thoracic, SpO2 and cardiac stroke volume | 12 bits, 250 Hz | Sleep stage, Sleep Apnea events, Body movements, Arousal  | 16 subjects: Age - mean 43 years, 32-56 years; Weight - mean 119 kg, 89-152 kg; Gender: 16M | Sleep stage scoring, Sleep apnea event detection |
 | [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/) | 197 | EEG, EOG, EMG, airflow and body temperature | SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz. ST frequency: EOG, EMG and EEG - 100 Hz, and the event marker at 1 Hz | Sleep Stages | 74 subjects (SC): mean 59 years, 25-101 years; 34M/40F. 22 subjects (ST): mean 40 years, 18-79 years; 7M/15F. | Sleep Stage Scoring |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | population | Applications |
+| [ISRUC-Sleep Dataset](https://sleeptight.isr.uc.pt/) | 126 | EEG, EOG, EMG, ECG, snore, airflow, Abdominal effort, SaO2, Body Position | Sampling frequency: EOG, EEG, EMG, ECG, Snore - 200 Hz, Airflow (X6), SaO2 - 12.5 Hz, Airflow (DC3), Abdominal effort, Body Position - 25 Hz | Sleep stage, respiratory events, Heart rate, Lights, SaO2, Movement | SG1 100 subjects: 51 ± 16 years, 20–85 year; 55M, 45F. SG2 8 subjects: 46.87 ± 18.7, 26-79 years; 6M, 2F. SG3 10 subjects: 40 ± 10 years 30–58 years; 9M, 1F. | Sleep stage scoring, Respiratory event detection |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
@@ -301,7 +301,7 @@ SG1 and SG2 consists of subjects with evidence of sleep disorders that could be 
 
 | Characteristic | Subgroup_1                 | Subgroup_2                | Subgroup3                  |
 | ---            | ---                        | ---                       | ---                        |
-| Age            | 51 ± 16 years; 20–85 years | 46.87 ± 18.7; 26-79 years | 40 ± 10 years; 30–58 years | 
+| Age            | 51 ± 16 years, 20–85 years | 46.87 ± 18.7, 26-79 years | 40 ± 10 years, 30–58 years | 
 | Gender         | 55M, 45F                   | 6M, 2F                    | 9M, 1F                     |
 
 ### Annotations
