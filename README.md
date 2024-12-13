@@ -1,4 +1,4 @@
-# Sleep-Disorders-Datasets
+# Sleep Disorders Datasets and Databases Repository
 
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | ---              | ---         | ---     | ---               | ---         | ---        | ---          |
