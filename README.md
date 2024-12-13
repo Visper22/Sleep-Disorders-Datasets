@@ -210,7 +210,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 
 
 ## [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/)
-*Published: Oct. 24, 2013. Version: 1.0.0*
+*Published: Oct. 24, 2013. Version: 1.0.0* **VER**
 
 
 The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake. In literature this data base has been mostly used for sleep stage scoring [(He et al. 2022)](https://doi.org/10.1016/j.compbiomed.2022.106044), [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615)
@@ -255,9 +255,53 @@ Hypnograms were manually scored by trained technicians (identified by the eighth
 
 
 
+## [ISRUC-Sleep Dataset](https://sleeptight.isr.uc.pt/)
+*Published: 2016. Version: unknown*
+
+The ISRUC-Sleep dataset is contains 126 PSG records from both healthy and sleep disorders subject collected by the Sleep Medicine Centre of the Hospital of Coimbra University (CHUC) between 2009 and 2013. The dataset is divided into 3 subgroups and was designed to support various research objectives, including biomedical signal processing, the development of new automated sleep stage classification (ASSC) methods, and studies in sleep physiology. Subgroup_1 (SG1) contains data from 100 subjects with evidence of sleep disorders (some under sleep medication), each undergoing one recording session. Subgroup_2 (SG2) contains data from 8 subjects with evidence of sleep disorders (some under sleep medication), each undergoing two recording sessions on different dates, making it suitable for studies on changes in PSG signals over time. Subgroup_3 (SG3) contains data from 10 healthy control subjects, each undergoing one recording session, which is useful for comparing healthy individuals with patients suffering from sleep disorders. 
+
+[(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320) sleep stanging 
+
+- 126 polysomnography records: 100 from 100 subjects (SG_1), 16 from 8 subjects (SG_2) and 10 from 10 subjects (SG_3).
+- PSG records include EEG (F3-A2, C3-A2, O1-A2, F4-A1, C4-A1, and O2-A1), EOG (LOC-A2 and ROC-A1), EMG (chin: X1, righ leg: X3, left leg: X4), ECG (X2), snore (X5), airflow (X6 and DC3), Abdominal effort (X7 and X8), SaO2, Body Position (DC8).
+- Sampling frequency: EOG, EEG, EMG, ECG, Snore - 200 Hz, Airflow (X6), SaO2 - 12.5 Hz, Airflow (DC3), Abdominal effort, Body Position - 25 Hz; 
+- Some signlas are pre-filtered: EOG, EEG - Butterworth band of 0.3–35 Hz and a 50 Hz notch filter; EMG, Snore - Butterworth band of 10–70 Hz and a 50 Hz notch filter; ECG - notch filter 50 Hz.
+
+### Files
+ 
+| File Type | Description                                                                                    |
+| ---       | ---                                                                                            |
+| .rec      | Digitized Polysonography Signals in European Data format                                       | 
+| .mat      | Digitized Polysonography Signals in MATLAB format                                              |
+| .text     | Hypnogram Annotation files                                                                     |
+| .xlsx     | Events and sleep stanging (same as hypnogram, different format), and subject information files |
+
+### Subjects
+
+SG1 and SG2 consists of subjects with evidence of sleep disorders that could be under medication, but all were capable of breathing unaided, while SG3 consists of a control group with healthy subjects.
+
+| Characteristic | Subgroup_1                 | Subgroup_2                | Subgroup3                  |
+| ---            | ---                        | ---                       | ---                        |
+| Age            | 51 ± 16 years; 20–85 years | 46.87 ± 18.7; 26-79 years | 40 ± 10 years; 30–58 years | 
+| Gender         | 55M, 45F                   | 6M, 2F                    | 9M, 1F                     |
+
+### Annotations
+
+Sleep stages were scored in AASM Standard.
+
+| Type               | Description                                                                                                 |
+| ---                | ---                                                                                                         |
+| Sleep stage        | W: wake, N1, N2, N3, R: REM                                                                                 |
+| Respiratory events | CH: Central Hypopnea, C: Central Apnea, OH: Obstructive Hypopnea, OA: Obstructive Apnea, MH: Mixed Hypopnea |
+| HR                 | Heart rate                                                                                                  |
+| Lights             | L out: Lights turned off, L on: Lights turned on                                                            |
+| SaO2               | oxigen saturation in percentage                                                                             |
+| Movement           | LM: Leg Movement, MP: Movement Periodic, PLM: Periodic Leg Movement                                         |
 
 
-[(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320) sleep stanging and noise removal
+### Notes
+-  No info on ECG lead placement
+-  Several studies used filtering to remove artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320),
 
 
 
