@@ -4,7 +4,7 @@
 | ---              | ---         | ---     | ---               | ---         | ---        | ---          |
 | [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/) | 70 | ECG and chest and abdominal effort, airflow,  and SpO2)| 16 bits per sample, 100 Hz, 200 A/D units per millivolt | Apnea events, QRS complex | 70 subjects: Age -	mean 45.1 years,	27-63 years; AHI -	mean 28,	0-93.5; Gender -	58M, 12F	 | Sleep Apnea event detection, sleep Apnea classification |
 | [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/) | 108 | EEG, EOG, EMG, ECG, airflow, abdominal and thoracic effort and SaO2 | Signal Properties | CAP cycle, Sleep stages, body position | 108 subjects: Age - mean 45.2 years,	14-82 years; Gender - 66M, 42F | CAP cycle detection, sleep stage scoring, sleep disorder classification |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/ucddb/1.0.0/) | 25 | EEG, EOG, EMG, ECG, airflow (thermistor), tharacid and abdominal effort, SpO2, snoring and body position | Sampling frequency: SpO2 - 8 Hz; EEG and ECG - 128 Hz, EOG and EMG - 64 Hz | Sleep stage, Respiratory events, Duration of respiratory event, Snore, Arousal, PB/CS and B/T | 25 subjects: Age - 50 ± 10 years, 28-68 years; BMI - 31.6 ± 4.0 kg/m², 25.1-42.5 kg/m²; AHI - 24.1 ± 20.3, 1.7-90.9; Gender - 21M, 4F | sleep stage scoring, sleep apnea events detection |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
@@ -135,10 +135,9 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 The database contains overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic from September 2002 to February 2003. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://doi.org/10.1016/j.bspc.2021.103132) and sleep stage classification [(Abdulla et al. 2023)](https://doi.org/10.1016/j.ijmedinf.2023.105001). For sleep apnea events detection some studies detect sleep apnea events,  regardless of type [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Cai et al. 2025)](https://doi.org/10.1016/j.bspc.2024.106993), while others focus on specific events detection, such as obstructive sleep apnea event detection [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), and multiple sleep apnea events detection (Hypopnea, Central, Obstructive,Mixed) [(Arnab et al. 2022)](https://doi.org/10.1109/TENSYMP54529.2022.9864566).
 
 - 25 polysomnography records (Jaeger-Toennies system) acompained by Three-channel holter ECGs (Reynolds Lifecard CF system)
-- PSG records include EEG (C3-A2), EEG (C4-A1), left EOG, right EOG, submental EMG, ECG (modified lead V2), oro-nasal airflow (thermistor), ribcage movements, abdomen movements (uncalibrated strain gauges), oxygen saturation (finger pulse oximeter), snoring (tracheal microphone) and body position.
+- PSG records include EEG (C3-A2, C4-A1), EOG (left, right), EMG (submental), ECG (modified lead V2), oro-nasal airflow, thoracic and abdominal effort (uncalibrated strain gauges), SpO2 (finger pulse oximeter), snoring (tracheal microphone) and body position.
 - Holter records include ECG (V5, CC5, V5R)
 - Sampling frequency: SpO2 - 8 Hz; EEGs and ECGs - 128 Hz, EOG and EMG - 64 Hz a sample rate [**Sampling frequency**]
-- Subject info [**Link**]
 
 ### Files
  
@@ -157,9 +156,9 @@ Subjects with no known cardiac disease, autonomic dysfunction, and not on medica
 
 | Characteristic | Description                       |
 | ---            | ---                               |
-| Age            | 50 ± 10 years; 28-68 years        |
-| BMI            | 31.6 ± 4.0 kg/m²; 25.1-42.5 kg/m² |
-| AHI            | 24.1 ± 20.3; 1.7-90.9             |
+| Age            | 50 ± 10 years, 28-68 years        |
+| BMI            | 31.6 ± 4.0 kg/m², 25.1-42.5 kg/m² |
+| AHI            | 24.1 ± 20.3, 1.7-90.9             |
 | Gender         | 21M, 4F                           |
 
 ### Annotations
