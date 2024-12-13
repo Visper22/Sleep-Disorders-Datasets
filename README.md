@@ -440,7 +440,6 @@ Sleep stages were scored according to R & Kales rules. There are also annotation
 ### Notes
 - EEG was recorded using Ag/AgCl electrodes, as per the International 10–20 System of Electrode Placement
 - Mention of filtering of the EEG by the equipment but no mention about EMG and ECG
-- Several studies reported employing some type of filtering to removw artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320), [Hamouda et al. 2024)](https://doi.org/10.1016/j.bspc.2024.106184), [(Fei et al. 2024)](https://doi.org/10.1016/j.compbiomed.2024.108300)
 
 
 
