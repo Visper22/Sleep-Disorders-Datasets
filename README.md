@@ -302,38 +302,14 @@ Sleep stages were scored in AASM Standard by two different sleep experts.
 -  Even though the signals are pre-filtered, several studies used filtering to remove artifacts [(Khalighi et al. 2013)](https://doi.org/10.1016/j.eswa.2013.06.023), [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## [Sleep Heart Health Study (SHHS)](https://biolincc.nhlbi.nih.gov/studies/shhs/)
-Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)
+*Published: Unknown (revised on October 2, 2024)*
 
-To determine the cardiovascular and other consequences of sleep-disordered breathing and to test whether sleep-disordered breathing is associated with an increased risk of coronary heart disease, stroke, all-cause mortality and hypertension by examining subjects from well-characterized and established epidemiologic cohorts. The Sleep Heart Health Study added in-home polysomnography to the data collected in each of the parent studies at a baseline SHHS exam and a follow-up approximately 4 years later.
 
-[(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615) sleep stage scoring
+This data base was designed to investigate the relationship between sleep disordered breathing and cardiovascular disease, stroke, all-cause mortality, and hypertension. The Sleep Heart Health Study (SHHS) contains subjects from well-characterized and established epidemiologic cohorts: The Hagerstown and Minneapolis/St. Paul sites of the Atherosclerosis Risk in Communities Study (ARIC), The Hagerstown, Sacramento and Pittsburgh sites of the Cardiovascular Health Study (CHS), The Framingham Offspring Cohort, The Strong Heart Study (SHS) sites in South Dakota, Oklahoma, and Arizona, The New York Hypertension Cohorts, The Tucson Epidemiologic Study of Airways Obstructive Diseases and the Health and Environment Study. The study incorporated in-home polysomnography into the data collected from each parent study during a baseline SHHS exam and a follow-up approximately 4 years later. In the literature, SHHS data has been widely used for sleep stage scoring studies [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615), and correlation analyses, including the relationship between subjective sleep quality and objective measures of sleep [(Kaplan et al. 2017)](https://doi.org/10.1016/j.sleep.2017.03.004), the predictive role of sleep hypoxemia in mortality in patients with sleep apnea [(Khouzani et al. 2024)](https://doi.org/10.1016/j.chpulm.2024.100087), and the study of heart rate variability during sleep onset in patients with insomnia [(Fan et al. 2023)](https://doi.org/10.1016/j.sleep.2023.06.005).
 
-Granted by the Case Western Reserve University, SHHS was developed by the National Heart Lung and Blood Institute to determine cardiovascular and other consequences of sleep-disordered breathing [35]. SHHS is regarded as a resource for subsequent studies related to sleep disorders. There are 10,000 nightly PSG records of 79,456 h of clinical data. These data have been recorded in clinical sleep laboratories for more than eight years and are highly robust to physical variability among patients. The SHHS dataset was scored using the Rechtschaffen and Kales (R&K) guidelines. SHHS’ data are available at https://www.sleepdata.org/ (accessed on 11 August 2021).
-
-SHHS Visit 1 (November 1995 - January 1998) (N=5798)
--  5804 Polysomonography records (SHHS-1)
--  Follow-up polysomnogram (SHHS-2) was obtained for 3295 of the participants
--  Polysomonography records include EEG (C3/A2 and C4/A1), EOG (right and left), EMG (bipolar submental), ECG (bipolar lead), Respiratory signals (abbdominal and thoracix effort, and airflow), Heart rate (derived from ECG), pO2, Body position, ambient light 
+-  5804 PSG subjects (SHHS-1) with a follow-up polysomnogram (SHHS-2) for 3295 of the participants
+-  Polysomonography records include EEG (C3/A2 and C4/A1), EOG (right and left), EMG (bipolar submental), ECG (bipolar lead), abbdominal and thoracix effort, airflow, Heart rate (derived from ECG), SpO2, Body position, ambient light 
 - Sampling frequency: EEG, ECG (SHHS-1) and EMG - 125 Hz; EOG - 50 Hz; ECG (SHHS-2) - 250 Hz, airflow, THOR and ABDO - 10 Hz; Heart rate, Spo2 - 1 Hz
 - Each participant in the parent studies was completed a questionaire covering usual sleep pattern, snoring, and sleepiness.
 
@@ -343,29 +319,32 @@ SHHS Visit 1 (November 1995 - January 1998) (N=5798)
  
 | File Type | Description                                                                            |
 | ---       | ---                                                                                    |
-| .edf      | Digitized Holter Signals in European Data format                                       |
-| .rec      | Digitized Polysonography Signals in European Data format                               | 
-| .txt      | Annotation files                                                                       |
-| .st       | Annotation for PhysioBank ATM or other software that reads PhysioBank-compatible files |
-| .m        | Matlab files for CAP scoring CAP parameters computation                                |
-| .xlsx     | Spreadsheet file with gender and age information                                       |
+| .edf      | Digitized Polysonography Signals in European Data format                                       |
+| .hea      | Text header files that specify the formats of the associated signal files as well as subject info                             | 
+| .hyp      | Sleep stages annotation files                                                                       |
+| .arous    | Arousal events annotation files |
+| .resp     | Respiratory events annotation files                                |
+| .oart     | Oximeter artifacts annotation files                                       |
+| .comp     | all annotations from the hypn, arou, resp, and oart files                                       |
 
 ### Subjects
 
-
+| Characteristic | Description                |
+| ---            | ---                        |
+| Age            | 63.1 years; 39–90 years    |
+| Gender         | 2765M, 3039F               |
 
 ### Annotations
-The SHHS dataset was scored using the Rechtschaffen and Kales (R&K) guidelines.
+Sleep stages was scored using the Rechtschaffen and Kales (R&K) guidelines. Addicionally, there are annotations for respiratory and arousal events, and oximiter artifacts.
 
-
-
-
-
+## Data by request
+Data can be resqueted [here](https://biolincc.nhlbi.nih.gov/login/?next=/requests/type/shhs/):
+- Must have BioLINCC account
+- Must fill a request form
+- 
 ### Notes
--  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
-
-
-
+- A study reported that 101 records had poor quality or where incomplete [(Kaplan et al. 20127)](https://doi.org/10.1016/j.sleep.2017.03.004)
+-  Several studies used filtering to remove artifacts 
 
 
 
