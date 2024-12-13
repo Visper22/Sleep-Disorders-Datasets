@@ -8,7 +8,6 @@ The Apnea-ECG Database was design to support the development of automated method
 - 70 ECG records from 7 hours to 10 hours
 - 16 bits per sample, least significant byte first in each pair, 100 samples per second, nominally 200 A/D units per millivolt
 - Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal respiratory effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp N), and oxygen saturation (SpO2).
-- Subjects info (**LINK FILE**)
 
 ### Files
 
