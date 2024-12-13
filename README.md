@@ -6,8 +6,8 @@
 | [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/) | 108 | EEG, EOG, EMG, ECG, airflow, abdominal and thoracic effort and SaO2 | Signal Properties | CAP cycle, Sleep stages, body position | 108 subjects: Age - mean 45.2 years,	14-82 years; Gender - 66M, 42F | CAP cycle detection, sleep stage scoring, sleep disorder classification |
 | [St. Vincent's University Hospital / University College Dublin Sleep Apnea Database](https://physionet.org/content/ucddb/1.0.0/) | 25 | EEG, EOG, EMG, ECG, airflow (thermistor), tharacid and abdominal effort, SpO2, snoring and body position | Sampling frequency: SpO2 - 8 Hz; EEG and ECG - 128 Hz, EOG and EMG - 64 Hz | Sleep stage, Respiratory events, Duration of respiratory event, Snore, Arousal, PB/CS and B/T | 25 subjects: Age - 50 ± 10 years, 28-68 years; BMI - 31.6 ± 4.0 kg/m², 25.1-42.5 kg/m²; AHI - 24.1 ± 20.3, 1.7-90.9; Gender - 21M, 4F | sleep stage scoring, sleep apnea events detection |
 | [MIT-BIH Polysomnographic Database](https://physionet.org/content/slpdb/1.0.0/) | 18 | ECG, BP, EEG, EOG, EMG, airflow, abdominal or thoracic, SpO2 and cardiac stroke volume | 12 bits, 250 Hz | Sleep stage, Sleep Apnea events, Body movements, Arousal  | 16 subjects: Age - mean 43 years, 32-56 years; Weight - mean 119 kg, 89-152 kg; Gender: 16M | Sleep stage scoring, Sleep apnea event detection |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/) | 197 | EEG, EOG, EMG, airflow and body temperature | SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz. ST frequency: EOG, EMG and EEG - 100 Hz, and the event marker at 1 Hz | Sleep Stages | 74 subjects (SC): mean 59 years, 25-101 years; 34M/40F. 22 subjects (ST): mean 40 years, 18-79 years; 7M/15F. | Sleep Stage Scoring |
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
@@ -238,7 +238,7 @@ The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep re
 
 - 197 PSG records from 2 studies: 153 20h long records from 74 subjects (SC) and 44 9h long records from 22 subjects (ST)
 - 12 bits per sample
-- All records contain EEG (from Fpz-Cz and Pz-Oz electrode locations) signals, EOG (horizontal) signals, and submental chin EMG signal.
+- All records contain EEG (from Fpz-Cz and Pz-Oz electrode locations), EOG (horizontal), EMG (and submental chin).
 - The SC records often also contain oro-nasal respiration and rectal body temperature.
 - SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz.
 - ST frequency: EOG, EMG and EEG - 100 Hz, and the event marker at 1 Hz.
@@ -256,7 +256,7 @@ The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep re
 
 | Characteristic | SC                                | ST                         |
 | ---            | ---                               | ---                        |
-| Age            | mean 59 years; 25-101 years       | mean 40 years; 18-79 years |
+| Age            | mean 59 years, 25-101 years       | mean 40 years, 18-79 years |
 | Gender         | 34M/40F                           | 7M/15F                     |
 
 ### Annotations
