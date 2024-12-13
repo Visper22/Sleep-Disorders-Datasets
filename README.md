@@ -3,7 +3,7 @@
 ## [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/)
 *Published: Feb. 10, 2000. Version: 1.0.0*
 
-The Apnea-ECG Database was design to support the development of automated methods for detecting sleep apnea events, emphasizing the use of ECG signals. So it has been many employed in various studies for the detection of sleep apnea events [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369) [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558) but also, for subject-level sleep apnea classification [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666).
+The Apnea-ECG Database was design to support the development of automated methods for detecting sleep apnea events, emphasizing the use of ECG signals. So, it has been many employed in various studies for the detection of sleep apnea events [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369) [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558) but also, for subject-level sleep apnea classification [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666).
 
 - 70 ECG records from 7 hours to 10 hours
 - 16 bits per sample, least significant byte first in each pair, 100 samples per second, nominally 200 A/D units per millivolt
@@ -51,7 +51,7 @@ Apnea annotations (derived by human experts on the basis of simultaneously recor
 ## [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/)
 *Published: July 26, 2012. Version: 1.0.0*
 
-The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The records include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is CAP analysis, the CAP sleep database could also be used for the development of sleep stage automatic detection algorithms and sleep disorders detecntion algorithms. However, for the latter the set would be really unbanlced.
+The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The records include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is CAP analysis, the CAP sleep database could also be used for the development of sleep stage automatic scoring algorithms [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615) and sleep disorders automatic classification algorithms. However, for the latter the set would be really unbanlanced.
 
 - 108 polysomnographic records
 - Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG of the submentalis muscle, bilateral anterior tibial EMG, respiration signals (airflow, abdominal and thoracic effort, and SaO2) and ECG.
@@ -213,7 +213,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 *Published: Oct. 24, 2013. Version: 1.0.0*
 
 
-The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake.
+The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake. In literature this data base has been mostly used for sleep stage scoring [(He et al. 2022)](https://doi.org/10.1016/j.compbiomed.2022.106044), [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615)
 
 - 197 PSG records from 2 studies: 153 20h long records from 74 subjects (SC) and 44 9h long records from 22 subjects (ST)
 - 12 bits per sample
@@ -250,8 +250,15 @@ Hypnograms were manually scored by trained technicians (identified by the eighth
 ### Notes
 - SC: The first nights of subjects 36 and 52, and the second night of subject 13, were lost due to a failing cassette or laserdisk.
 - SC: The submental-EMG signal was electronically highpass filtered, rectified and low-pass filtered
-- Files are named in the form */*7**ssN**J0-PSG.edf where ss is the subject number, and N is the night.
-- Several studies reported employing some type of filtering to removw artifacts [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004), [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004)
+- Files are named in the form \*\*7**ssN**J0-PSG.edf where ss is the subject number, and N is the night.
+- Several studies reported employing some type of filtering to removw artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320), [Hamouda et al. 2024)](https://doi.org/10.1016/j.bspc.2024.106184), [(Fei et al. 2024)](https://doi.org/10.1016/j.compbiomed.2024.108300)
+
+
+
+
+
+[(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320) sleep stanging and noise removal
+
 
 
 
@@ -276,6 +283,8 @@ Hypnograms were manually scored by trained technicians (identified by the eighth
 Published: Oct. 9, 2007. Version: 1.0.0 (revised on 1 September 2011)
 
 To determine the cardiovascular and other consequences of sleep-disordered breathing and to test whether sleep-disordered breathing is associated with an increased risk of coronary heart disease, stroke, all-cause mortality and hypertension by examining subjects from well-characterized and established epidemiologic cohorts. The Sleep Heart Health Study added in-home polysomnography to the data collected in each of the parent studies at a baseline SHHS exam and a follow-up approximately 4 years later.
+
+[(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615) sleep stage scoring
 
 SHHS Visit 1 (November 1995 - January 1998) (N=5798)
 -  5804 Polysomonography records (SHHS-1)
