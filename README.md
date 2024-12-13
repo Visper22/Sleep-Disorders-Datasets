@@ -204,7 +204,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 ### Notes
 - slp41 and slp 45 records do not have apnea annotations
 - Records slp01a and slp01b are segments of one subject's polysomnogram, separated by a gap of about one hour; records slp02a and slp02b are segments of another subject's polysomnogram, separated by a ten-minute gap.
-- Several studies reported employing some type of filtering to removw artifacts [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004), [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004)
+- Several studies reported employing some type of filtering to removw artifacts [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004), [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004).
 
 
 
@@ -212,7 +212,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 *Published: Oct. 24, 2013. Version: 1.0.0* **VER**
 
 
-The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake. In literature this data base has been mostly used for sleep stage scoring [(He et al. 2022)](https://doi.org/10.1016/j.compbiomed.2022.106044), [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615)
+The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake. In literature this data base has been mostly used for sleep stage scoring [(He et al. 2022)](https://doi.org/10.1016/j.compbiomed.2022.106044), [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187), [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615)
 
 - 197 PSG records from 2 studies: 153 20h long records from 74 subjects (SC) and 44 9h long records from 22 subjects (ST)
 - 12 bits per sample
@@ -257,9 +257,7 @@ Hypnograms were manually scored by trained technicians (identified by the eighth
 ## [ISRUC-Sleep Dataset](https://sleeptight.isr.uc.pt/)
 *Published: 2016. Version: unknown*
 
-The ISRUC-Sleep dataset is contains 126 PSG records from both healthy and sleep disorders subject collected by the Sleep Medicine Centre of the Hospital of Coimbra University (CHUC) between 2009 and 2013. The dataset is divided into 3 subgroups and was designed to support various research objectives, including biomedical signal processing, the development of new automated sleep stage classification (ASSC) methods, and studies in sleep physiology. Subgroup_1 (SG1) contains data from 100 subjects with evidence of sleep disorders (some under sleep medication), each undergoing one recording session. Subgroup_2 (SG2) contains data from 8 subjects with evidence of sleep disorders (some under sleep medication), each undergoing two recording sessions on different dates, making it suitable for studies on changes in PSG signals over time. Subgroup_3 (SG3) contains data from 10 healthy control subjects, each undergoing one recording session, which is useful for comparing healthy individuals with patients suffering from sleep disorders. 
-
-[(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320) sleep stanging 
+The ISRUC-Sleep dataset is contains 126 PSG records from both healthy and sleep disorders subject collected by the Sleep Medicine Centre of the Hospital of Coimbra University (CHUC) between 2009 and 2013. The dataset is divided into 3 subgroups and was designed to support various research objectives, including biomedical signal processing, the development of new automated sleep stage classification (ASSC) methods, and studies in sleep physiology. Subgroup_1 (SG1) contains data from 100 subjects with evidence of sleep disorders (some under sleep medication), each undergoing one recording session. Subgroup_2 (SG2) contains data from 8 subjects with evidence of sleep disorders (some under sleep medication), each undergoing two recording sessions on different dates, making it suitable for studies on changes in PSG signals over time. Subgroup_3 (SG3) contains data from 10 healthy control subjects, each undergoing one recording session, which is useful for comparing healthy individuals with patients suffering from sleep disorders. In literature this data base has been mostly used for sleep stage scoring [(Khalighi et al. 2013)](https://doi.org/10.1016/j.eswa.2013.06.023), [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320), [(Moctezuma et al. 2023)](https://doi.org/10.1016/j.ifacol.2023.10.1458), however it has also been used for sleep apnea event detection [(Rehman et al. 2025)](https://doi.org/10.1016/j.engappai.2024.109534).
 
 - 126 polysomnography records: 100 from 100 subjects (SG_1), 16 from 8 subjects (SG_2) and 10 from 10 subjects (SG_3).
 - PSG records include EEG (F3-A2, C3-A2, O1-A2, F4-A1, C4-A1, and O2-A1), EOG (LOC-A2 and ROC-A1), EMG (chin: X1, righ leg: X3, left leg: X4), ECG (X2), snore (X5), airflow (X6 and DC3), Abdominal effort (X7 and X8), SaO2, Body Position (DC8).
@@ -286,7 +284,7 @@ SG1 and SG2 consists of subjects with evidence of sleep disorders that could be 
 
 ### Annotations
 
-Sleep stages were scored in AASM Standard.
+Sleep stages were scored in AASM Standard by two different sleep experts.
 
 | Type               | Description                                                                                                 |
 | ---                | ---                                                                                                         |
@@ -300,7 +298,8 @@ Sleep stages were scored in AASM Standard.
 
 ### Notes
 -  No info on ECG lead placement
--  Several studies used filtering to remove artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320),
+-  Since annotations were made by to different experts, not all may agree. So, some studies, when devoloping systems for stage scoring, ignore the stages in which there's no agreement [(Moctezuma et al. 2023)](https://doi.org/10.1016/j.ifacol.2023.10.1458).
+-  Even though the signals are pre-filtered, several studies used filtering to remove artifacts [(Khalighi et al. 2013)](https://doi.org/10.1016/j.eswa.2013.06.023), [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320).
 
 
 
@@ -329,6 +328,8 @@ To determine the cardiovascular and other consequences of sleep-disordered breat
 
 [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615) sleep stage scoring
 
+Granted by the Case Western Reserve University, SHHS was developed by the National Heart Lung and Blood Institute to determine cardiovascular and other consequences of sleep-disordered breathing [35]. SHHS is regarded as a resource for subsequent studies related to sleep disorders. There are 10,000 nightly PSG records of 79,456 h of clinical data. These data have been recorded in clinical sleep laboratories for more than eight years and are highly robust to physical variability among patients. The SHHS dataset was scored using the Rechtschaffen and Kales (R&K) guidelines. SHHS’ data are available at https://www.sleepdata.org/ (accessed on 11 August 2021).
+
 SHHS Visit 1 (November 1995 - January 1998) (N=5798)
 -  5804 Polysomonography records (SHHS-1)
 -  Follow-up polysomnogram (SHHS-2) was obtained for 3295 of the participants
@@ -354,6 +355,7 @@ SHHS Visit 1 (November 1995 - January 1998) (N=5798)
 
 
 ### Annotations
+The SHHS dataset was scored using the Rechtschaffen and Kales (R&K) guidelines.
 
 
 
@@ -362,10 +364,6 @@ SHHS Visit 1 (November 1995 - January 1998) (N=5798)
 ### Notes
 -  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
 
-
-
-
-Sleep-EDF Sleep stages classification [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187)
 
 
 
