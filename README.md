@@ -18,9 +18,9 @@
 
 The Apnea-ECG Database was design to support the development of automated methods for detecting sleep apnea events, focusing the use of ECG signals. So, it has been many employed in various studies for the detection of sleep apnea events [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532), [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369) [(Hou et al. 2025)](https://doi.org/10.1016/j.cmpb.2024.108558) but also, for subject-level sleep apnea classification [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666).
 
-- 70 ECG records from 7 hours to 10 hours
-- 16 bits, 100 Hz, 200 A/D units per millivolt
-- All records have ECG signals
+- 70 ECG records from 7 hours to 10 hours.
+- 16 bits, 100 Hz, 200 A/D units per millivolt.
+- All records have ECG signals.
 - Records a01 through a04, b01, and c01 through c03 are accompanied by additional signals: chest and abdominal effort signals obtained using inductance plethysmography (Resp C and Resp A), oronasal airflow measured using nasal thermistors (Resp N), and SpO2.
 
 ### Files
@@ -52,7 +52,7 @@ The Apnea-ECG Database was design to support the development of automated method
 
 ### Annotations
 
-Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), every minute. Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125.
+Apnea annotations (derived by human experts on the basis of simultaneously recorded respiration and related signals), taken every every minute. Machine-generated QRS annotations (in which all beats regardless of type have been labeled normal) made using sqrs125.
 
 | Type          | Description                                               |
 | ---           | ---                                                       |
@@ -60,8 +60,8 @@ Apnea annotations (derived by human experts on the basis of simultaneously recor
 | Qrs complex   | N: R-peak                                                 |
 
 ### Notes
-- "In April 2013, Chiu-wen Wu reported that training set control records c05 and c06 come from the same original recording (c05 begins 80 seconds later than c06). c06 may have been a corrected version of c05.". [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/)
-- .qrs files are unaudited and contain errors. [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/)
+- "In April 2013, Chiu-wen Wu reported that training set control records c05 and c06 come from the same original recording (c05 begins 80 seconds later than c06). c06 may have been a corrected version of c05.". [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/).
+- .qrs files are unaudited and contain errors. [From Apnea-ECG DB site](https://physionet.org/content/apnea-ecg/1.0.0/).
 - Some ECG recordings (a10, a12, a19, b05, c01, c04, c07, c09, and x17) are reversed [(Yang et al. 2022)](https://doi.org/10.1016/j.compbiomed.2021.105124).
 - Several studies reported that the signals from the database are raw signals, so artifact removal techiques were used to remove noise, such as noise from movement during sleep [(Li et al., 2024)](https://doi.org/10.1109/TIM.2024.3440369), [(Jiao et al., 2024)](https://doi.org/10.1109/OJEMB.2024.3405666), [(Wei et al., 2024)](https://doi.org/10.1109/IMCEC59810.2024.10575752), [(Mashrur et al. 2021)](https://doi.org/10.1016/j.compbiomed.2021.104532).
 - [(Travieso et al.)](https://doi.org/10.1016/j.neucom.2013.04.048) evaluated the quality of the ECG signals following pre-defined characteristics and "after discarding the affected segments, the recordings are reduced to a 54.76% of its duration in the worst case and 89.09% in the best case, per patient. The mean extracted length of the database recordings is 76.94%.". They employ this process of discarding the noisy or low quality segments instead of applying typical filtering techniques.
@@ -72,10 +72,10 @@ Apnea annotations (derived by human experts on the basis of simultaneously recor
 
 The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The records include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is for CAP automatic detection [(Sharma et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107259), [(Agarwal et al. 2024)](https://doi.org/10.1016/j.sleep.2024.09.025), the CAP sleep database has also been used for the development of sleep stage automatic scoring algorithms [(Yan et al. 2019)](https://doi.org/10.1016/j.bspc.2018.10.001), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615) and sleep disorders automatic classification algorithms [(Sharma et al. 2024)](http://dx.doi.org/10.1007/s10489-024-05284-6). However, for the latter the set would be really unbanlanced.
 
-- 108 polysomnographic records
+- 108 polysomnographic records.
 - Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG (submentalis muscle and bilateral anterior tibial), airflow, abdominal and thoracic effort, SaO2, and ECG.
-- Some records may have additional EEG traces (Fp1-F3, F3-C3, C3-P3, P3-O1 and/or Fp2-F4, F4-C4, C4-P4, P4-O2)
-- Sampling rate varies between and within signals
+- Some records may have additional EEG traces (Fp1-F3, F3-C3, C3-P3, P3-O1 and/or Fp2-F4, F4-C4, C4-P4, P4-O2).
+- Sampling rate varies between and within signals.
 
 ### Files
  
@@ -119,12 +119,12 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 | Location      | the signal(s) in which the event can be observed          |
 
 ### Notes
-- Body position was not recorded in some subjects
-- Not all subjects have all of the mentioned signals recorded
-- A-phase annotations include distintion of waht subtype it is (A1, A2, A3)
+- Body position was not recorded in some subjects.
+- Not all subjects have all of the mentioned signals recorded.
+- A-phase annotations include distintion of waht subtype it is (A1, A2, A3).
 - Though the signals are pre-filtered some studies still employed some kind of filtering [(Sheng-Hsu et al. 2018)](https://doi.org/10.1016/j.neuroimage.2018.08.001), [(Yan et al. 2019)](https://doi.org/10.1016/j.bspc.2018.10.001), [(Sharma et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107259), [(Agarwal et al. 2024)](https://doi.org/10.1016/j.sleep.2024.09.025).
-- Not clear about ECG lead positioning
-- Channel names are inconsistent
+- Not clear about ECG lead positioning.
+- Channel names are inconsistent.
 
 
 
@@ -134,10 +134,10 @@ Sleep macrostructure was scored according to the Rechtschaffen & Kales rules, wh
 
 The database contains overnight polysomnograms and simultaneous three-channel Holter ECG recordings from adults with suspected sleep-disordered breathing, collected at St. Vincent's University Hospital Sleep Disorders Clinic from September 2002 to February 2003. It can be used for multiple porposes, such as sleep stage classification and sleep apnea event detection. Studies have been made on sleep/wake classification [(Geng et al 2022)](https://doi.org/10.1016/j.bspc.2021.103132) and sleep stage classification [(Abdulla et al. 2023)](https://doi.org/10.1016/j.ijmedinf.2023.105001). For sleep apnea events detection some studies detect sleep apnea events,  regardless of type [(Fatimah et al. 2020)](https://doi.org/10.1016/j.bspc.2020.102005), [(Cai et al. 2025)](https://doi.org/10.1016/j.bspc.2024.106993), while others focus on specific events detection, such as obstructive sleep apnea event detection [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), and multiple sleep apnea events detection (Hypopnea, Central, Obstructive,Mixed) [(Arnab et al. 2022)](https://doi.org/10.1109/TENSYMP54529.2022.9864566).
 
-- 25 polysomnography records (Jaeger-Toennies system) acompained by Three-channel holter ECGs (Reynolds Lifecard CF system)
+- 25 polysomnography records (Jaeger-Toennies system) acompained by Three-channel holter ECGs (Reynolds Lifecard CF system).
 - PSG records include EEG (C3-A2, C4-A1), EOG (left, right), EMG (submental), ECG (modified lead V2), oro-nasal airflow, thoracic and abdominal effort (uncalibrated strain gauges), SpO2 (finger pulse oximeter), snoring (tracheal microphone) and body position.
-- Holter records include ECG (V5, CC5, V5R)
-- Sampling frequency: SpO2 - 8 Hz; EEGs and ECGs - 128 Hz, EOG and EMG - 64 Hz a sample rate [**Sampling frequency**]
+- Holter records include ECG (V5, CC5, V5R).
+- Sampling frequency: SpO2 - 8 Hz; EEG, ECG - 128 Hz; EOG, EMG - 64 Hz.
 
 ### Files
  
@@ -178,8 +178,8 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 
 
 ### Notes
--  The recording dates and times are not available
--  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal
+-  The recording dates and times are not available.
+-  In record ucddb002, only two distinct ECG signals were recorded; the second ECG signal was also used as the third signal.
 -  [(Geng et el.)](https://www.sciencedirect.com/science/article/pii/S1746809421007291) discarded poor ECG quality signals though they do not mention which. Additionally, the methods for R-peak detection was chosen specifically for signals with poor quality.
 -  Several studies used filtering to remove artifacts [(Taghizadegan et al. 2021)](https://www.sciencedirect.com/science/article/pii/S030698772100178X#b0050), [(Hou et al. 2025)](https://www.sciencedirect.com/science/article/pii/S0169260724005510), [(Mashrur et al. 2021)](https://www.sciencedirect.com/science/article/pii/S0010482521003267).
 
@@ -191,9 +191,9 @@ Sleep stages were scored by an experienced sleep technologist according to the R
 
 The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnographic records, collected from patients at the Boston's Beth Israel Hospital Sleep Laboratory for chronic obstructive sleep apnea syndrome (OSA) evaluation and to test the effects of CPAP (continuous positive airway pressure). Records vary beatween four-, six-, and seven-channel record and include automatic (with corrections) beat annotations on the ECG and sleep stages and apnea events annotations each 30 s. This database was disignd for researchers studying clinical physiology or non-linear dynamics during sleep apnea, engineers developing algorithms for PSG data analysis, and students learning about sleep physiology. In literature it has been used for detectionn and classification tasks, including general apnea event detection [(Fatimah et al. 2020)](https://www.sciencedirect.com/science/article/pii/S1746809420301610), OSA event analysis [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), sleep stage classification [(Isa et al. 2012)](https://doi.org/10.1016/j.proeng.2012.07.259), [(Otomo et al. 2019)](https://doi.org/10.1016/j.procs.2019.08.173), drowsiness detection in sleep stage 1 [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004), and heart rate estimation  [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004).
 
-- 18 PSG records from 16 subjects
-- 12 bits, 250 Hz
-- All recordings include an ECG signal, an blood pressure signal (measured using a catheter), an EEG signal (C4-A1, O2-A1 or C3-O1), and a respiration signal (airflow, abdominal or thoracic effort)
+- 18 PSG records from 16 subjects.
+- 12 bits, 250 Hz.
+- All recordings include an ECG signal, an blood pressure signal (measured using a catheter), an EEG signal (C4-A1, O2-A1 or C3-O1), and a respiration signal (airflow, abdominal or thoracic effort).
 - The six- and seven-channel recordings also include a respiratory effort signal derived by inductance plethysmography; some include an EOG signal and an EMG signal (chin), and the remainder include a cardiac stroke volume signal and Spo2 signal (earlobe).
 
 ### Files
@@ -224,7 +224,7 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 | Arousal              | A: Unspecified arousal                                              |
 
 ### Notes
-- slp41 and slp 45 records do not have apnea annotations
+- slp41 and slp 45 records do not have apnea annotations.
 - Records slp01a and slp01b are segments of one subject's polysomnogram, separated by a gap of about one hour; records slp02a and slp02b are segments of another subject's polysomnogram, separated by a ten-minute gap.
 - Several studies reported employing some type of filtering to removw artifacts [(Taghizadegan et al. 2021)](https://doi.org/10.1016/j.mehy.2021.110659), [Rankawat & Dubey 2017)](https://doi.org/10.1016/j.bspc.2016.12.004), [(Belakhdar et al. 2018)](https://doi.org/10.1016/j.micpro.2018.02.004).
 
@@ -234,10 +234,10 @@ The MIT-BIH Polysomnographic Database is contains over 80 hours of polysomnograp
 *Published: Oct. 24, 2013. Version: 1.0.0* **VER**
 
 
-The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake. In literature this data base has been mostly used for sleep stage scoring [(He et al. 2022)](https://doi.org/10.1016/j.compbiomed.2022.106044), [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187), [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615)
+The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep recordings originating from two studies: the Sleep Cassette Study and Data (SC) and the Sleep Telemetry Study and Data (ST). The SC dataset includes 153 records collected from 1987 to 1991 for a study on age effects on sleep in healthy Caucasians, without sleep-related medication. Subjects wore a modified Walkman-like cassette recorder to collect two PSGs of about 20 hours each over two consecutive day-night periods at home while maintaining normal activities. The ST dataset includes 44 files collected in 1994 for study on temazepam effects on sleep in caucasians with mild difficulty falling asleep but otherwise healthy. Two records of 9h were collected for each patient using a miniature telemetry system, one following temazepam intake and the other after placebo intake. In literature this data base has been mostly used for sleep stage scoring [(He et al. 2022)](https://doi.org/10.1016/j.compbiomed.2022.106044), [(Abdulla et al. 2023)](https://www.sciencedirect.com/science/article/pii/S1386505623000187), [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615).
 
-- 197 PSG records from 2 studies: 153 20h long records from 74 subjects (SC) and 44 9h long records from 22 subjects (ST)
-- 12 bits per sample
+- 197 PSG records from 2 studies: 153 20h long records from 74 subjects (SC) and 44 9h long records from 22 subjects (ST).
+- 12 bits per sample.
 - All records contain EEG (from Fpz-Cz and Pz-Oz electrode locations), EOG (horizontal), EMG (and submental chin).
 - The SC records often also contain oro-nasal respiration and rectal body temperature.
 - SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz.
@@ -257,7 +257,7 @@ The Sleep-EDF database comprises 197 whole-night polysomnographic (PSG) sleep re
 | Characteristic | SC                                | ST                         |
 | ---            | ---                               | ---                        |
 | Age            | mean 59 years, 25-101 years       | mean 40 years, 18-79 years |
-| Gender         | 34M/40F                           | 7M/15F                     |
+| Gender         | 34M, 40F                          | 7M, 15F                    |
 
 ### Annotations
 
@@ -270,9 +270,9 @@ Hypnograms were manually scored by trained technicians (identified by the eighth
 
 ### Notes
 - SC: The first nights of subjects 36 and 52, and the second night of subject 13, were lost due to a failing cassette or laserdisk.
-- SC: The submental-EMG signal was electronically highpass filtered, rectified and low-pass filtered
+- SC: The submental-EMG signal was electronically highpass filtered, rectified and low-pass filtered.
 - Files are named in the form \*\*7**ssN**J0-PSG.edf where ss is the subject number, and N is the night.
-- Several studies reported employing some type of filtering to removw artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320), [Hamouda et al. 2024)](https://doi.org/10.1016/j.bspc.2024.106184), [(Fei et al. 2024)](https://doi.org/10.1016/j.compbiomed.2024.108300)
+- Several studies reported employing some type of filtering to removw artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320), [Hamouda et al. 2024)](https://doi.org/10.1016/j.bspc.2024.106184), [(Fei et al. 2024)](https://doi.org/10.1016/j.compbiomed.2024.108300).
 
 
 
@@ -330,7 +330,7 @@ Sleep stages were scored in AASM Standard by two different sleep experts.
 This data base was designed to investigate the relationship between sleep disordered breathing and cardiovascular disease, stroke, all-cause mortality, and hypertension. The Sleep Heart Health Study (SHHS) contains subjects from well-characterized and established epidemiologic cohorts: The Hagerstown and Minneapolis/St. Paul sites of the Atherosclerosis Risk in Communities Study (ARIC), The Hagerstown, Sacramento and Pittsburgh sites of the Cardiovascular Health Study (CHS), The Framingham Offspring Cohort, The Strong Heart Study (SHS) sites in South Dakota, Oklahoma, and Arizona, The New York Hypertension Cohorts, The Tucson Epidemiologic Study of Airways Obstructive Diseases and the Health and Environment Study. The study incorporated in-home polysomnography into the data collected from each parent study during a baseline SHHS exam and a follow-up approximately 4 years later. In the literature, SHHS data has been widely used for sleep stage scoring studies [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615), and correlation analyses, including the relationship between subjective sleep quality and objective measures of sleep [(Kaplan et al. 2017)](https://doi.org/10.1016/j.sleep.2017.03.004), the predictive role of sleep hypoxemia in mortality in patients with sleep apnea [(Khouzani et al. 2024)](https://doi.org/10.1016/j.chpulm.2024.100087), and the study of heart rate variability during sleep onset in patients with insomnia [(Fan et al. 2023)](https://doi.org/10.1016/j.sleep.2023.06.005).
 
 -  5804 PSG subjects (SHHS-1) with a follow-up polysomnogram (SHHS-2) for 3295 of the participants.
--  Polysomonography records include EEG (C3-A2, C4-A1), EOG (right, left), EMG (bipolar submental), ECG (bipolar lead), abbdominal and thoracic effort, airflow, Heart rate (derived from ECG), SpO2, Body position, ambient light .
+-  Polysomonography records include EEG (C3-A2, C4-A1), EOG (right, left), EMG (bipolar submental), ECG (bipolar lead), abbdominal and thoracic effort, airflow, Heart rate (derived from ECG), SpO2, Body position, ambient light.
 - Sampling frequency: EEG, ECG (SHHS-1) and EMG - 125 Hz; EOG - 50 Hz; ECG (SHHS-2) - 250 Hz, airflow, THOR and ABDO - 10 Hz; Heart rate, Spo2 - 1 Hz.
 - Each participant in the parent studies was completed a questionaire covering usual sleep pattern, snoring, and sleepiness.
 
@@ -362,7 +362,7 @@ Data can be resqueted [here](https://biolincc.nhlbi.nih.gov/login/?next=/request
 - Must fill a request form
 
 ### Notes
-- A study reported that 101 records had poor quality or where incomplete [(Kaplan et al. 20127)](https://doi.org/10.1016/j.sleep.2017.03.004)
+- A study reported that 101 records had poor quality or where incomplete [(Kaplan et al. 20127)](https://doi.org/10.1016/j.sleep.2017.03.004).
 
 
 ## [NCH Sleep DataBank](https://sleepdata.org/datasets/nchsdb)
@@ -422,11 +422,11 @@ Data can be resqueted [here](https://sleepdata.org/datasets/nchsdb):
 
 The data from this database were originally collected for a research project entitled “Sleep EEG spectral analysis in psycho-physiological insomnia and normal sleep subjects.” This article describes data from patients referred to the Sleep Disorders Research Center (SDRC). This database includes PSG data from subjects with psycho-physiological insomnia as well as normal sleepers. In literature, this dataset has been employed on two types of applications: insomnia detection [(Sharma et al. 2024)](http://dx.doi.org/10.1007/s10489-024-05284-6), [(Kumar et al. 2024)](http://dx.doi.org/10.1109/TLA.2024.10431420), and sleep stage classification [(Moradi et al. 2020)](http://dx.doi.org/10.1159/000511306).
 
-- 22 8h PSG records, 11 with insomnia and 11 without
-- PSG based on the American Academy of Sleep Medicine guidelines
+- 22 8h PSG records, 11 with insomnia and 11 without.
+- PSG based on the American Academy of Sleep Medicine guidelines.
 - EEG (C4-A1, C3-A2, F3, F4, C3, C4, A1, A2, O1, O2, F3-A2, F4A-1, O1-A2, O2-A1), EOG (EOG1, EOG2, EOG1-A1, EOG2-A1, EOG1-A2, EOG2-A2) and EMG (EMG, EMG1, EMG2).
-- Sample frequency: 256 Hz
-- Filtering: EEG - band pass between 0.1 Hz and 35Hz
+- Sample frequency: 256 Hz.
+- Filtering: EEG - band pass between 0.1 Hz and 35Hz.
 - Includes power spectral features of each band (δ, θ, α, β) in segment of 30 s for each channel and nonlinear analysis parameters.
 - The polysomnography room was cleaned from artefacts like auditory and visual noises.
 
@@ -440,7 +440,7 @@ The data from this database were originally collected for a research project ent
 | REM.txt   | REM events annotations                                    |
 |  Sleep Profile Reliability.txt   | Reliability of the sleep profile   |
 |  Sleep Profile.txt   | Sleep stage annotations                        |
-|  Spindle K.txt   | Spindle and K complex annotations                                    |
+|  Spindle K.txt   | Spindle and K complex annotations             |
 
 ### Subjects
 
@@ -460,8 +460,8 @@ Sleep stages were scored according to R & Kales rules. There are also annotation
 
 
 ### Notes
-- EEG was recorded using Ag/AgCl electrodes, as per the International 10–20 System of Electrode Placement
-- Mention of filtering of the EEG by the equipment but no mention about EMG and ECG
+- EEG was recorded using Ag/AgCl electrodes, as per the International 10–20 System of Electrode Placement.
+- Mention of filtering of the EEG by the equipment but no mention about EMG and ECG.
 
 
 
