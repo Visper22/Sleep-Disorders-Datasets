@@ -334,7 +334,7 @@ This data base was designed to investigate the relationship between sleep disord
 ### Annotations
 Sleep stages was scored using the Rechtschaffen and Kales (R&K) guidelines. Addicionally, there are annotations for respiratory and arousal events, and oximiter artifacts.
 
-## Data by request
+### Data by request
 Data can be resqueted [here](https://biolincc.nhlbi.nih.gov/login/?next=/requests/type/shhs/):
 - Must have BioLINCC account
 - Must fill a request form
@@ -387,7 +387,7 @@ Sleep stages were scored in AASM Standard.
 | Sleep Stage?       | Typically occurs after “Lights On”, and physiological data acquired during that time can usually be ignored, as it indicates that the study has ended |
 | Others             | Oxygen Desaturation, Oximeter Event, EEG Arousal, Gain/Filter Change                                                                                  |
 
-## Data by request
+### Data by request
 Data can be resqueted [here](https://sleepdata.org/datasets/nchsdb):
 - Must have NSRR account
 - Must fill a request form
