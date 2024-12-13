@@ -395,6 +395,55 @@ Data can be resqueted [here](https://sleepdata.org/datasets/nchsdb):
 
 
 
+## [Sleep Disorder Research Centre](https://data.mendeley.com/datasets/3hx58k232n/4)
+*Published: 25 September 2017. Version 4.*
+
+The data from this database were originally collected for a research project entitled “Sleep EEG spectral analysis in psycho-physiological insomnia and normal sleep subjects.” This article describes data from patients referred to the Sleep Disorders Research Center (SDRC). This database includes PSG data from subjects with psycho-physiological insomnia as well as normal sleepers. In literature, this dataset has been employed on two types of applications: insomnia detection [(Sharma et al. 2024)](http://dx.doi.org/10.1007/s10489-024-05284-6), [(Kumar et al. 2024)](http://dx.doi.org/10.1109/TLA.2024.10431420), and sleep stage classification [(Moradi et al. 2020)](http://dx.doi.org/10.1159/000511306).
+
+- 22 8h PSG records, 11 with insomnia and 11 without
+- PSG based on the American Academy of Sleep Medicine guidelines
+- EEG (C4-A1, C3-A2, F3, F4, C3, C4, A1, A2, O1, O2, F3-A2, F4A-1, O1-A2, O2-A1), EOG ((EOG1, EOG2, EOG1-A1, EOG2-A1, EOG1-A2, EOG2-A2) and 3 EMG (EMG, EMG1, EMG2).
+- Sample frequency: 256 Hz
+- Filtering: EEG - band pass between 0.1 Hz and 35Hz
+- Includes power spectral features of each band (δ, θ, α, β) in segment of 30 s for each channel and nonlinear analysis parameters.
+- The polysomnography room was cleaned from artefacts like auditory and visual noises.
+
+### Files
+
+| File Type     | Description                                            |
+| ---           | ---                                                    |
+| .edf       | Digitized Signals in European data format              | 
+| Hypnogram.edf | Sleep satges annotations file in European Data Format  |
+| Arousal.txt   | Arousal annotations                                    |
+| REM.txt   | REM events annotations                                    |
+|  Sleep Profile Reliability.txt   | Reliability of the sleep profile   |
+|  Sleep Profile.txt   | Sleep stage annotations                        |
+|  Spindle K.txt   | Spindle and K complex annotations                                    |
+
+### Subjects
+
+| Characteristic | SC                                | 
+| ---            | ---                               | 
+| Age            | 43.2 ± 14.2 years; 18-63 years |
+| Gender         | 8M/14F                           | 
+
+
+### Annotations
+
+Sleep stages were scored according to R & Kales rules. There are also annotations of arousal, spindles and K-complexes. 
+
+| Type               | Description                                                             |
+| ---                | ---                                                                     |
+| Sleep stage        |  Stage 4, Stage 3, Stage 2, Stage 1, Rem, Wake, Movement  |
+
+
+### Notes
+- EEG was recorded using Ag/AgCl electrodes, as per the International 10–20 System of Electrode Placement
+- Mention of filtering of the EEG by the equipment but no mention about EMG and ECG
+- Several studies reported employing some type of filtering to removw artifacts [(Ghimatgar et al. 2019)](https://doi.org/10.1016/j.jneumeth.2019.108320), [Hamouda et al. 2024)](https://doi.org/10.1016/j.bspc.2024.106184), [(Fei et al. 2024)](https://doi.org/10.1016/j.compbiomed.2024.108300)
+
+
+
 
 
 
