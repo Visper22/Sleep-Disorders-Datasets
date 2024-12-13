@@ -1,6 +1,8 @@
 # Sleep Disorders Datasets and Databases Repository
 
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+Sleep is a fundamental part of our lives as it’s during sleep that our body gets a chance to rest and recover. Yet, millions of people suffer from sleep disorders that impact their health, mood and quality of life. The standard exam for diagnosing sleep disorders is called polysomnography (PSG) and involves multiple sensors attached to the patient to record physiological signals. This process can involve around 18 or more wires that can be attached to multiple spots in the face, nose, chest, legs, fingers and in some cases even belts around the torso. This repository contains information on 9 datasets for multiple applications for sleep disorder studies.
+
+| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Subjects   | Applications |
 | ---              | ---         | ---     | ---               | ---         | ---        | ---          |
 | [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/) | 70 | ECG and chest and abdominal effort, airflow,  and SpO2)| 16 bits per sample, 100 Hz, 200 A/D units per millivolt | Apnea events, QRS complex | 70 subjects | Sleep Apnea event detection, sleep Apnea classification |
 | [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/) | 108 | EEG, EOG, EMG, ECG, airflow, abdominal and thoracic effort and SaO2 | Signal Properties | CAP cycle, Sleep stages, body position | 108 subjects | CAP cycle detection, Sleep stage scoring, Sleep disorder classification |
@@ -390,10 +392,10 @@ This database was created by Nationwide Children's Hospital (NCH) and Carnegie M
 
 | Characteristic | Description                                                                                |
 | ---            | ---                                                                                        | 
-| Age            | Mostly < 10                                                                                   | 
+| Age            | Mostly < 10                                                                                | 
 | Gender         | 2068M, 1604F, 1 Unknown                                                                    |
 | Race           | 2433 White, 738 Black or African American, 277 Multiple races, 93 Asian, 132 Other/Unknown |
-| Ethnicity      | 186 Hispanic or Latino, 3446 Not Hispanic or Latino, and 41 Unknown                       |
+| Ethnicity      | 186 Hispanic or Latino, 3446 Not Hispanic or Latino, and 41 Unknown                        |
 
 ### Annotations
 
@@ -418,7 +420,7 @@ Data can be resqueted [here](https://sleepdata.org/datasets/nchsdb):
 
 
 ## [Sleep Disorder Research Centre](https://data.mendeley.com/datasets/3hx58k232n/4)
-*Published: 25 September 2017. Version 4.*
+*Published: 25 September 2017. Version 4*
 
 The data from this database were originally collected for a research project entitled “Sleep EEG spectral analysis in psycho-physiological insomnia and normal sleep subjects.” This article describes data from patients referred to the Sleep Disorders Research Center (SDRC). This database includes PSG data from subjects with psycho-physiological insomnia as well as normal sleepers. In literature, this dataset has been employed on two types of applications: insomnia detection [(Sharma et al. 2024)](http://dx.doi.org/10.1007/s10489-024-05284-6), [(Kumar et al. 2024)](http://dx.doi.org/10.1109/TLA.2024.10431420), and sleep stage classification [(Moradi et al. 2020)](http://dx.doi.org/10.1159/000511306).
 
@@ -446,7 +448,7 @@ The data from this database were originally collected for a research project ent
 
 | Characteristic | SC                                | 
 | ---            | ---                               | 
-| Age            | 43.2 ± 14.2 years, 18-63 years |
+| Age            | 43.2 ± 14.2 years, 18-63 years    |
 | Gender         | 8M, 14F                           | 
 
 
