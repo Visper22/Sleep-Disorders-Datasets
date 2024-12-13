@@ -2,8 +2,8 @@
 
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | ---              | ---         | ---     | ---               | ---         | ---        | ---          |
-| [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/) | 70 | ECG and chest and abdominal effort, airflow,  and SpO2)| 16 bits per sample, 100 Hz, 200 A/D units per millivolt | Apnea events, QRS complex | 70 subjects: age -	mean 45.1 years,	27-63 years; AHI -	mean 28,	0-93.5; Gender:	58M, 12F	 | Sleep Apnea event detection, sleep Apnea classification |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/) | 70 | ECG and chest and abdominal effort, airflow,  and SpO2)| 16 bits per sample, 100 Hz, 200 A/D units per millivolt | Apnea events, QRS complex | 70 subjects: Age -	mean 45.1 years,	27-63 years; AHI -	mean 28,	0-93.5; Gender -	58M, 12F	 | Sleep Apnea event detection, sleep Apnea classification |
+| [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/) | 108 | EEG, EOG, EMG, ECG, airflow, abdominal and thoracic effort and SaO2 | Signal Properties | CAP cycle, Sleep stages, body position | 108 subjects: Age - mean 45.2 years,	14-82 years; Gender - 66M, 42F | CAP cycle detection, sleep stage scoring, sleep disorder classification |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
 | Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
@@ -44,13 +44,11 @@ The Apnea-ECG Database was design to support the development of automated method
 
 ### Subjects
 
-| Characteristic | Description                       |
-| ---            | ---                               |
-| Age            | mean 45.1 years,	27-63 years        |
-| AHI            | mean 28,	0-93.5             |
-| Gender         | 58M, 12F                           |
-
-
+| Characteristic | Description                  |
+| ---            | ---                          |
+| Age            | mean 45.1 years,	27-63 years |
+| AHI            | mean 28,	0-93.5              |
+| Gender         | 58M, 12F                     |
 
 ### Annotations
 
@@ -69,15 +67,13 @@ Apnea annotations (derived by human experts on the basis of simultaneously recor
 - [(Travieso et al.)](https://doi.org/10.1016/j.neucom.2013.04.048) evaluated the quality of the ECG signals following pre-defined characteristics and "after discarding the affected segments, the recordings are reduced to a 54.76% of its duration in the worst case and 89.09% in the best case, per patient. The mean extracted length of the database recordings is 76.94%.". They employ this process of discarding the noisy or low quality segments instead of applying typical filtering techniques.
 
 
-
-
 ## [CAP Sleep Database](https://physionet.org/content/capslpdb/1.0.0/)
 *Published: July 26, 2012. Version: 1.0.0*
 
 The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg during NREM sleep, characterized by two phase: A-phase (A1, A2 or A3) and B-phase). CAP is a marker of sleep instability and can be correlated with several sleep disorders. The CAP Sleep database provides a diverse set of recordings collected at the Sleep Disorders Center of the Ospedale Maggiore of Parma in Italy. The records include CAP annotations supporting the development and evaluation of automated CAP detection algorithms, as well as studies on the dynamics of CAP. Although the primary purpose of the CAP Sleep database is for CAP automatic detection [(Sharma et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107259), [(Agarwal et al. 2024)](https://doi.org/10.1016/j.sleep.2024.09.025), the CAP sleep database has also been used for the development of sleep stage automatic scoring algorithms [(Yan et al. 2019)](https://doi.org/10.1016/j.bspc.2018.10.001), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615) and sleep disorders automatic classification algorithms [(Sharma et al. 2024)](http://dx.doi.org/10.1007/s10489-024-05284-6). However, for the latter the set would be really unbanlanced.
 
 - 108 polysomnographic records
-- Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG of the submentalis muscle, bilateral anterior tibial EMG, respiration signals (airflow, abdominal and thoracic effort, and SaO2) and ECG.
+- Records include multiple pre-filtered biosignals: at least 3 EEG channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2) and EOG (2 channels), EMG (submentalis muscle and bilateral anterior tibial), airflow, abdominal and thoracic effort, SaO2, and ECG.
 - Some records may have additional EEG traces (Fp1-F3, F3-C3, C3-P3, P3-O1 and/or Fp2-F4, F4-C4, C4-P4, P4-O2)
 - Sampling rate varies between and within signals
 
@@ -104,6 +100,10 @@ The Cyclic Alternating Pattern (CAP) is a periodic EEG activity that occursg dur
 | rbd1-rbd22    | REM behavior disorder           |
 | sdb1-sdb4     | Sleep-disordered breathing      |
 
+| Characteristic | Description                  |
+| ---            | ---                          |
+| Age            | mean 45.2 years,	14-82 years |
+| Gender         | 66M, 42F                     |
 
 ### Annotations
 
