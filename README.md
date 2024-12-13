@@ -372,7 +372,7 @@ This database was created by Nationwide Children's Hospital (NCH) and Carnegie M
 
 
 - 3,984 polysomnography records from 3,673 subjects with a mean of 10.5h.
-- PSG records include EEG, EMG (chin and leg EMG), EOG, ECG, airflow, thoracic and abdominal effort, SpO2, bood CO2.
+- PSG records include EEG, EMG (chin and leg EMG), EOG, ECG, airflow, thoracic and abdominal effort, SpO2, blood CO2.
 - Almost half (1,972) of the files have 26 channels, a quarter (1,012) have 29, a fifth (820) have 25, and the rest have 28, 24, 40, 27, 9, or 56 channels.
 - Sampling frequency: 3,204 records in 256 Hz, 581 in 400 Hz, and 199 in 512 Hz.
 
@@ -390,7 +390,7 @@ This database was created by Nationwide Children's Hospital (NCH) and Carnegie M
 
 | Characteristic | Description                                                                                |
 | ---            | ---                                                                                        | 
-| Age            | Most <10                                                                                   | 
+| Age            | Mostly < 10                                                                                   | 
 | Gender         | 2068M, 1604F, 1 Unknown                                                                    |
 | Race           | 2433 White, 738 Black or African American, 277 Multiple races, 93 Asian, 132 Other/Unknown |
 | Ethnicity      | 186 Hispanic or Latino, 3446 Not Hispanic or Latino, and 41 Unknown                       |
@@ -432,15 +432,15 @@ The data from this database were originally collected for a research project ent
 
 ### Files
 
-| File Type     | Description                                            |
-| ---           | ---                                                    |
-| .edf       | Digitized Signals in European data format              | 
-| Hypnogram.edf | Sleep satges annotations file in European Data Format  |
-| Arousal.txt   | Arousal annotations                                    |
-| REM.txt   | REM events annotations                                    |
-|  Sleep Profile Reliability.txt   | Reliability of the sleep profile   |
-|  Sleep Profile.txt   | Sleep stage annotations                        |
-|  Spindle K.txt   | Spindle and K complex annotations             |
+| File Type                        | Description                                           |
+| ---                              | ---                                                   |
+| .edf                             | Digitized Signals in European data format             | 
+| Hypnogram.edf                    | Sleep satges annotations file in European Data Format |
+| Arousal.txt                      | Arousal annotations                                   |
+| REM.txt                          | REM events annotations                                |
+|  Sleep Profile Reliability.txt   | Reliability of the sleep profile                      |
+|  Sleep Profile.txt               | Sleep stage annotations                               |
+|  Spindle K.txt                   | Spindle and K-complex annotations                     |
 
 ### Subjects
 
