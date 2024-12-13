@@ -9,8 +9,8 @@
 | [Sleep-EDF Database Expanded](https://physionet.org/content/sleep-edfx/1.0.0/) | 197 | EEG, EOG, EMG, airflow and body temperature | SC frequency: EOG and EEG - 100 Hz. The submental-EMG, Oro-nasal airflow, rectal body temperature - 1Hz. ST frequency: EOG, EMG and EEG - 100 Hz, and the event marker at 1 Hz | Sleep Stages | 74 subjects (SC), 22 subjects (ST) | Sleep Stage Scoring |
 | [ISRUC-Sleep Dataset](https://sleeptight.isr.uc.pt/) | 126 | EEG, EOG, EMG, ECG, snore, airflow, Abdominal effort, SaO2, Body Position | Sampling frequency: EOG, EEG, EMG, ECG, Snore - 200 Hz, Airflow (X6), SaO2 - 12.5 Hz, Airflow (DC3), Abdominal effort, Body Position - 25 Hz | Sleep stage, respiratory events, Heart rate, Lights, SaO2, Movement | SG1 100 subjects, SG2 8 subjects, SG3 10 subjects | Sleep stage scoring, Respiratory event detection |
 | [Sleep Heart Health Study (SHHS)](https://biolincc.nhlbi.nih.gov/studies/shhs/) | - |  EEG, EOG, EMG, ECG, abdominal and thoracic effort, airflow, Heart rate, SpO2, Body position, light  | Sampling frequency: EEG, ECG (SHHS-1) and EMG - 125 Hz; EOG - 50 Hz; ECG (SHHS-2) - 250 Hz, airflow, THOR and ABDO - 10 Hz; Heart rate, Spo2 - 1 Hz | Sleep stages, respiratory and arousal events, oximiter artifacts | 5804 subjects (SHHS-1), 3295 subjects (SHHS-2) | Sleep Stage Scoring, Correlation Studies |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
-| Dataset/Database | No. Records | Signals | Signal Properties | Annotations | Population | Applications |
+| [NCH Sleep DataBank](https://sleepdata.org/datasets/nchsdb) | 3984 | EEG, EMG, EOG, ECG, airflow, thoracic and abdominal effort, SpO2, blood CO2 | Sample frequency: 256 Hz, 400 Hz, or 512 Hz | Sleep stage, Respiratory events, Lights, Movement, Body Position, Oxygen Desaturation, Oximeter Event, EEG Arousal, Gain/Filter Change | 3673 subjects | Sleep Stage Scoring, Sleep Apnea Classification, Others |
+| [Sleep Disorder Research Centre](https://data.mendeley.com/datasets/3hx58k232n/4) | 22 | EEG, EMG, EOG | Sample frequency: 256 Hzs | Sleep stages, arousal, spindles and K-complexes  | 22 subjects | Sleep Stage Scoring, Insomnia classification |
 
 
 ## [Apnea-ECG Database](https://physionet.org/content/apnea-ecg/1.0.0/)
@@ -329,10 +329,10 @@ Sleep stages were scored in AASM Standard by two different sleep experts.
 
 This data base was designed to investigate the relationship between sleep disordered breathing and cardiovascular disease, stroke, all-cause mortality, and hypertension. The Sleep Heart Health Study (SHHS) contains subjects from well-characterized and established epidemiologic cohorts: The Hagerstown and Minneapolis/St. Paul sites of the Atherosclerosis Risk in Communities Study (ARIC), The Hagerstown, Sacramento and Pittsburgh sites of the Cardiovascular Health Study (CHS), The Framingham Offspring Cohort, The Strong Heart Study (SHS) sites in South Dakota, Oklahoma, and Arizona, The New York Hypertension Cohorts, The Tucson Epidemiologic Study of Airways Obstructive Diseases and the Health and Environment Study. The study incorporated in-home polysomnography into the data collected from each parent study during a baseline SHHS exam and a follow-up approximately 4 years later. In the literature, SHHS data has been widely used for sleep stage scoring studies [(Li. et al. 2023)](https://doi.org/10.1016/j.compbiomed.2023.107477), [(Zhao et al. 2024)](https://doi.org/10.1016/j.bspc.2023.105615), and correlation analyses, including the relationship between subjective sleep quality and objective measures of sleep [(Kaplan et al. 2017)](https://doi.org/10.1016/j.sleep.2017.03.004), the predictive role of sleep hypoxemia in mortality in patients with sleep apnea [(Khouzani et al. 2024)](https://doi.org/10.1016/j.chpulm.2024.100087), and the study of heart rate variability during sleep onset in patients with insomnia [(Fan et al. 2023)](https://doi.org/10.1016/j.sleep.2023.06.005).
 
--  5804 PSG subjects (SHHS-1) with a follow-up polysomnogram (SHHS-2) for 3295 of the participants
--  Polysomonography records include EEG (C3-A2, C4-A1), EOG (right, left), EMG (bipolar submental), ECG (bipolar lead), abbdominal and thoracic effort, airflow, Heart rate (derived from ECG), SpO2, Body position, ambient light 
-- Sampling frequency: EEG, ECG (SHHS-1) and EMG - 125 Hz; EOG - 50 Hz; ECG (SHHS-2) - 250 Hz, airflow, THOR and ABDO - 10 Hz; Heart rate, Spo2 - 1 Hz
-- Each participant in the parent studies was completed a questionaire covering usual sleep pattern, snoring, and sleepiness
+-  5804 PSG subjects (SHHS-1) with a follow-up polysomnogram (SHHS-2) for 3295 of the participants.
+-  Polysomonography records include EEG (C3-A2, C4-A1), EOG (right, left), EMG (bipolar submental), ECG (bipolar lead), abbdominal and thoracic effort, airflow, Heart rate (derived from ECG), SpO2, Body position, ambient light .
+- Sampling frequency: EEG, ECG (SHHS-1) and EMG - 125 Hz; EOG - 50 Hz; ECG (SHHS-2) - 250 Hz, airflow, THOR and ABDO - 10 Hz; Heart rate, Spo2 - 1 Hz.
+- Each participant in the parent studies was completed a questionaire covering usual sleep pattern, snoring, and sleepiness.
 
 ### Files
  
@@ -350,7 +350,7 @@ This data base was designed to investigate the relationship between sleep disord
 
 | Characteristic | Description                |
 | ---            | ---                        |
-| Age            | 63.1 years; 39–90 years    |
+| Age            | 63.1 years, 39–90 years    |
 | Gender         | 2765M, 3039F               |
 
 ### Annotations
@@ -371,7 +371,7 @@ Data can be resqueted [here](https://biolincc.nhlbi.nih.gov/login/?next=/request
 This database was created by Nationwide Children's Hospital (NCH) and Carnegie Mellon University (CMU) to accelerate research on pediatric sleep and its connection to health. It contains 3,984 pediatric PSG records from 3,673 unique patients collected in the real-world clinical setting at NCH in Columbus, Ohio, USA between 2017 and 2019, along with the patients' longitudinal clinical data. The NCH Sleep DataBank was designed to study many problems related to pediatric sleep, including: Automatic sleep stage classification, especially algorithms that combine modalities beyond EEG or ECG, Automatic real-time sleep disorder (e.g. apnea) detection, diagnosis prediction, identifying patient subgroups that could affect their symptoms or best courses of treatment, and treatment (e.g. medications and procedures) efficacy analysis. Studies using this database have addressed diverse applications, such as sleep stage scoring [(Lee et al. 2023)](https://doi.org/10.1007/s13534-023-00288-6), obstructive sleep apnea diagnosis [(Wang et al. 2025)](https://doi.org/10.1007/s40747-024-01648-0), prevalence and influencing factors of sleep disorders among preschool children [(Gao et al. 2023)](https://doi.org/10.1186/s13052-023-01477-w), and mapping neurodevelopment using sleep-based features in pediatric populations [(Kozhemiako et al. 2024)](https://doi.org/10.1016/j.nicl.2023.103552).
 
 
-- 3,984 polysomnography records from 3,673 subjects with a mean of 10.5h
+- 3,984 polysomnography records from 3,673 subjects with a mean of 10.5h.
 - PSG records include EEG, EMG (chin and leg EMG), EOG, ECG, airflow, thoracic and abdominal effort, SpO2, bood CO2.
 - Almost half (1,972) of the files have 26 channels, a quarter (1,012) have 29, a fifth (820) have 25, and the rest have 28, 24, 40, 27, 9, or 56 channels.
 - Sampling frequency: 3,204 records in 256 Hz, 581 in 400 Hz, and 199 in 512 Hz.
@@ -393,7 +393,7 @@ This database was created by Nationwide Children's Hospital (NCH) and Carnegie M
 | Age            | Most <10                                                                                   | 
 | Gender         | 2068M, 1604F, 1 Unknown                                                                    |
 | Race           | 2433 White, 738 Black or African American, 277 Multiple races, 93 Asian, 132 Other/Unknown |
-| Ethnicity      | 186 Hispanic or Latino, 3,446 Not Hispanic or Latino, and 41 Unknown                       |
+| Ethnicity      | 186 Hispanic or Latino, 3446 Not Hispanic or Latino, and 41 Unknown                       |
 
 ### Annotations
 
@@ -424,7 +424,7 @@ The data from this database were originally collected for a research project ent
 
 - 22 8h PSG records, 11 with insomnia and 11 without
 - PSG based on the American Academy of Sleep Medicine guidelines
-- EEG (C4-A1, C3-A2, F3, F4, C3, C4, A1, A2, O1, O2, F3-A2, F4A-1, O1-A2, O2-A1), EOG ((EOG1, EOG2, EOG1-A1, EOG2-A1, EOG1-A2, EOG2-A2) and 3 EMG (EMG, EMG1, EMG2).
+- EEG (C4-A1, C3-A2, F3, F4, C3, C4, A1, A2, O1, O2, F3-A2, F4A-1, O1-A2, O2-A1), EOG (EOG1, EOG2, EOG1-A1, EOG2-A1, EOG1-A2, EOG2-A2) and EMG (EMG, EMG1, EMG2).
 - Sample frequency: 256 Hz
 - Filtering: EEG - band pass between 0.1 Hz and 35Hz
 - Includes power spectral features of each band (δ, θ, α, β) in segment of 30 s for each channel and nonlinear analysis parameters.
@@ -446,8 +446,8 @@ The data from this database were originally collected for a research project ent
 
 | Characteristic | SC                                | 
 | ---            | ---                               | 
-| Age            | 43.2 ± 14.2 years; 18-63 years |
-| Gender         | 8M/14F                           | 
+| Age            | 43.2 ± 14.2 years, 18-63 years |
+| Gender         | 8M, 14F                           | 
 
 
 ### Annotations
